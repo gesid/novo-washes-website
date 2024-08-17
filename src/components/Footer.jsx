@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 function Footer() {
     return (
         <>
-            <footer className="bg-[#1C1D21] text-white fixed bottom-0 w-full flex flex-col items-center py-6">
+            <footer className="bg-[#1C1D21] text-white bottom-0 w-full flex flex-col items-center py-6">
                 <img src="../src/assets/imgs/logo_washes.png" alt="Logo" className="h-12 mb-4" />
                 <p className="mb-4">Siga nossas Redes Sociais</p>
                 <div className="flex space-x-6 mb-4">

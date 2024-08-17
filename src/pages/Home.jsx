@@ -1,9 +1,13 @@
-
+import Hero from "../components/Hero";
+import Footer from "../components/Footer";
+import HeroQuemSomos from "../components/HeroQuemSomos";
 
 function Home() {
     return (
         <div className="">
-            <h1>Home</h1>
+            <Hero />
+            <HeroQuemSomos />
+            <Footer />
         </div>
     );
 };

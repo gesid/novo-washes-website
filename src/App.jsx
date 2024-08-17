@@ -5,7 +5,6 @@ import QuemSomos from './pages/QuemSomos';
 import Washes2024 from './pages/Washes2024';
 import EdicoesAnteriores from './pages/EdicoesAnteriores';
 import DataWashes from './pages/DataWashes';
-import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
           {/* <Route path="*" element={<NoMatch />} /> */}
         </Routes>
       </div>
-      <Footer />
     </>
   )
 }
