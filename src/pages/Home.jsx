@@ -1,9 +1,11 @@
-
+import Hero from "../components/Hero";
+import HeroQuemSomos from "../components/HeroQuemSomos";
 
 function Home() {
     return (
         <div className="">
-            <h1>Home</h1>
+            <Hero />
+            <HeroQuemSomos />
         </div>
     );
 };
