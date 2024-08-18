@@ -1,5 +1,4 @@
 import Hero from "../components/Hero";
-import Footer from "../components/Footer";
 import HeroQuemSomos from "../components/HeroQuemSomos";
 
 function Home() {
@@ -7,7 +6,6 @@ function Home() {
         <div className="">
             <Hero />
             <HeroQuemSomos />
-            <Footer />
         </div>
     );
 };

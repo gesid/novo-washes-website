@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import QuemSomos from './pages/QuemSomos';
 import Washes2024 from './pages/Washes2024';
@@ -20,6 +21,7 @@ function App() {
           {/* <Route path="*" element={<NoMatch />} /> */}
         </Routes>
       </div>
+      <Footer />
     </>
   )
 }
