@@ -1,6 +1,15 @@
+import { useState } from "react";
 import Card from "../components/Card";
+import ComitePrograma from "../components/ComitePrograma";
 
 const Washes2024 = () => {
+  
+  const [isDropdownOpen, setDropdownOpen] = useState(false); // Controle do dropdown
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen); // Alterna entre abrir e fechar
+  };
+
   const members = [
     {
       imgSrc: "src/assets/imgs/rodrigo_santos.jpg",
@@ -71,6 +80,23 @@ const Washes2024 = () => {
             memberType={coordinator.memberType}
           />
         ))}
+      </div>
+        {/* Dropdown Comitê de Programa */}
+        <div className="mt-8 text-center">
+        <div className="flex justify-center items-center">
+          <h2 className="text-2xl font-bold">Comitê de Programa</h2>
+          <button
+            className="ml-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+            onClick={toggleDropdown}
+          >
+            {isDropdownOpen ? "Fechar" : "Abrir"}
+          </button>
+        </div>
+        {isDropdownOpen && (
+          <div className="mt-4">
+            <ComitePrograma />
+          </div>
+        )}
       </div>
     </div>
   );
