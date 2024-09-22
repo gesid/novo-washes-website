@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "../components/Card";
 import ComitePrograma from "../components/ComitePrograma";
+import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
 const Washes2024 = () => {
   
@@ -81,22 +82,27 @@ const Washes2024 = () => {
           />
         ))}
       </div>
-        {/* Dropdown Comitê de Programa */}
-        <div className="mt-8 text-center">
-        <div className="flex justify-center items-center">
-          <h2 className="text-2xl font-bold">Comitê de Programa</h2>
-          <button
-            className="ml-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
-            onClick={toggleDropdown}
-          >
-            {isDropdownOpen ? "Fechar" : "Abrir"}
-          </button>
+
+      {/* Dropdown Comitê de Programa */}
+      <div className="mt-8 text-center">
+        <div
+          className="flex justify-center items-center cursor-pointer"
+          onClick={toggleDropdown} // Alterna o dropdown ao clicar na div
+        >
+          <h2 className="text-2xl font-bold mx-2">Comitê de Programa</h2>
+          {isDropdownOpen ? <SlArrowUp /> : <SlArrowDown />}
         </div>
-        {isDropdownOpen && (
-          <div className="mt-4">
+
+        {/* Transição suave do conteúdo do dropdown */}
+        <div
+          className={`transition-all duration-500 ease-in-out overflow-hidden ${
+            isDropdownOpen ? "max-h-full opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className={`mt-4 ${isDropdownOpen ? "block" : "hidden"}`}>
             <ComitePrograma />
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
