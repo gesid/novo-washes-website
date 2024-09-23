@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Card = ({ imgSrc, name, memberType, university }) => {
+const Card = ({ imgSrc, name, memberType, university, linkedinUrl, lattesUrl }) => {
   return (
     <div className="p-4 max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
       <div className="flex flex-col items-center">
@@ -20,22 +20,29 @@ const Card = ({ imgSrc, name, memberType, university }) => {
         </div>
         <div className="flex space-x-4 mt-4">
           <a
-            href="#"
+            href={linkedinUrl}
             target="_blank"
             rel="noreferrer noopener"
             className="hover:text-blue-500"
           >
             <img
-              src="/external/iconlinkedin8565-g6kj.svg"
+              src="src/assets/imgs/linkedin_icon.png"
               alt="LinkedIn"
               className="w-6 h-6"
             />
-          </a>
-          <img
-            src="/external/icondribble8565-hjz.svg"
-            alt="Dribble"
-            className="w-6 h-6"
+          </a>        
+          <a
+            href={lattesUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="hover:text-blue-500"
+          >
+            <img
+              src="src/assets/imgs/lattes.svg"
+              alt="Lattes"
+              className="w-6 h-6"
           />
+          </a>
         </div>
       </div>
     </div>
@@ -47,6 +54,8 @@ Card.propTypes = {
   name: PropTypes.string.isRequired,
   memberType: PropTypes.string.isRequired,
   university: PropTypes.string.isRequired,
+  linkedinUrl: PropTypes.string.isRequired,
+  lattesUrl: PropTypes.string.isRequired,
 };
 
 export default Card;
