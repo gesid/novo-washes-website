@@ -43,7 +43,7 @@ const Washes2024 = () => {
       university: "Universidade Federal do Mato Grosso do Sul-UFMS",
       memberType: "Membro Permanente",
       linkedinUrl: "https://www.linkedin.com/in/awdren-font%C3%A3o-5087b121/",
-      lattesUrl: ""
+      lattesUrl: "http://lattes.cnpq.br/0597440372595970"
     },
   ];
 
@@ -59,7 +59,7 @@ const Washes2024 = () => {
     {
       imgSrc: "src/assets/imgs/Anna Beatriz.jpg",
       name: "Anna Beatriz",
-      university: "Universidade Federal do Ceará-UFC.",
+      university: "Universidade Federal do Ceará-UFC",
       memberType: "Coordenadora",
       linkedinUrl: "https://www.linkedin.com/in/anna-beatriz-marques/",
       lattesUrl: "http://lattes.cnpq.br/5522150204610320",
