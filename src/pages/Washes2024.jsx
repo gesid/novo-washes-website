@@ -17,39 +17,52 @@ const Washes2024 = () => {
       name: "Rodrigo Santos",
       university: "Universidade Federal do Estado do Rio de Janeiro-UNIRIO",
       memberType: "Membro Permanente",
+      linkedinUrl: "https://www.linkedin.com/in/profrodrigosantos/",
+      lattesUrl: "http://lattes.cnpq.br/8613736894676086",
     },
     {
-      imgSrc: "",
-      name: "",
-      university: "",
+      imgSrc: "src/assets/imgs/Igor Steinmacher.jpg",
+      name: "Igor Steinmacher",
+      university: "Northern Arizona University-NAU",
       memberType: "Membro Permanente",
+      linkedinUrl: "https://www.linkedin.com/in/igorsteinmacher/",
+      lattesUrl: "http://lattes.cnpq.br/5529725593221391",
+
     },
     {
-      imgSrc: "",
-      name: "",
-      university: "",
+      imgSrc: "src/assets/imgs/Davi Viana.jpeg",
+      name: "Davi Viana",
+      university: "Universidade Federal do Maranhão-UFMA",
       memberType: "Membro Permanente",
+      linkedinUrl: "https://www.linkedin.com/in/davi-viana-73032a55/",
+      lattesUrl: "http://lattes.cnpq.br/9297257833779277",
     },
     {
-      imgSrc: "",
-      name: "",
-      university: "",
+      imgSrc: "src/assets/imgs/Awdren Fontão.jpg",
+      name: "Awdren Fontão",
+      university: "Universidade Federal do Mato Grosso do Sul-UFMS",
       memberType: "Membro Permanente",
+      linkedinUrl: "https://www.linkedin.com/in/awdren-font%C3%A3o-5087b121/",
+      lattesUrl: "http://lattes.cnpq.br/0597440372595970"
     },
   ];
 
   const coordinators = [
     {
-      imgSrc: "",
+      imgSrc: "src/assets/imgs/Allyson Allex.jpeg",
       name: "Allysson Allex Araújo",
-      university: "UFRJ",
+      university: "Universidade Federal do Cariri-UFCA",
       memberType: "Coordenador",
+      linkedinUrl: "https://www.linkedin.com/in/allyssonaraujo/",
+      lattesUrl: "http://lattes.cnpq.br/1768955171390815"
     },
     {
-      imgSrc: "",
+      imgSrc: "src/assets/imgs/Anna Beatriz.jpg",
       name: "Anna Beatriz",
-      university: "Universidade Federal do Ceará-UFC.",
+      university: "Universidade Federal do Ceará-UFC",
       memberType: "Coordenadora",
+      linkedinUrl: "https://www.linkedin.com/in/anna-beatriz-marques/",
+      lattesUrl: "http://lattes.cnpq.br/5522150204610320",
     },
   ];
 
@@ -65,6 +78,8 @@ const Washes2024 = () => {
             name={member.name}
             university={member.university}
             memberType={member.memberType}
+            linkedinUrl={member.linkedinUrl}
+            lattesUrl={member.lattesUrl}
           />
         ))}
       </div>
@@ -79,6 +94,8 @@ const Washes2024 = () => {
             name={coordinator.name}
             university={coordinator.university}
             memberType={coordinator.memberType}
+            linkedinUrl={coordinator.linkedinUrl}
+            lattesUrl={coordinator.lattesUrl}
           />
         ))}
       </div>
