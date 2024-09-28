@@ -21,8 +21,8 @@ function HeroWashes2024() {
                         </p>
                         <Link
                             to="/quem-somos"
-                            className="px-4 py-2 flex justify-center bg-[#36BCEE] hover:bg-white
-                            text-base text-white hover:text-[#36BCEE] hover:border hover:border-[#36BCEE] cursor-pointer
+                            className="px-4 py-2 flex justify-center bg-[#74C76B] hover:bg-white
+                            text-base text-white hover:text-[#74C76B] hover:border hover:border-[#74C76B] cursor-pointer
                             rounded transition-colors duration-300 lg:px-5 lg:py-3 lg:text-2xl"
                         >
                             Saiba mais sobre o WASHES 2024!
