@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 export default {
   content: [
     "./index.html",
@@ -6,7 +6,10 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: { 'baner-hero': "url(src/assets/imgs/banner-hero-home.svg)" }
+      backgroundImage: { 
+        "banner-hero": "url(src/assets/imgs/banner-hero-home.svg)",
+        "banner-hero-quemSomos": "url(src/assets/imgs/banner-hero-home-quemSomos.png)",
+        "banner-hero-washes2024": "url(src/assets/imgs/banner-hero-home-washes2024.png)", }
     },
   },
   plugins: [],

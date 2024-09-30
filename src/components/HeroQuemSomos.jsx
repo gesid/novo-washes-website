@@ -5,7 +5,6 @@ function HeroQuemSomos() {
         <>
             <section id="heroQuemSomos" className="w-full flex flex-col items-center justify-center mt-8 mb-8 lg:my-24 lg:flex-row">
                 <div className="max-w-screen-2xl flex flex-col gap-7 justify-center items-center lg:flex-row lg:gap-20">
-                    <img className="h-60 lg:hidden" src="../src/assets/imgs/banner-hero-home-quemSomos.png" alt="Ilustração de pessoas trabalhando com dados e gráficos" />
                     <div className="flex flex-col items-center text-center mx-5 gap-7 lg:gap-8 lg:items-start lg:text-left">
                         <h1 className="text-3xl lg:text-4xl font-semibold text-[#0D6080]">QUEM SOMOS?</h1>
                         <p className="text-lg font-light text-[#2F2F2F] lg:text-3xl">
@@ -20,9 +19,12 @@ function HeroQuemSomos() {
                             Saiba mais!
                         </Link>
                     </div>
-                    <img src="../src/assets/imgs/banner-hero-home-quemSomos.png" alt="Ilustração de pessoas trabalhando com dados e gráficos" className="hidden lg:flex lg:h-[400px] xl:h-[500px]" />
+                    {/* Ajustando o tamanho e estilo da section para diferentes tamanhos de tela */}
+                    <section className="w-full h-80 mt-5 bg-banner-hero-quemSomos bg-no-repeat bg-cover bg-center lg:w-1/2 lg:h-96">
+                    </section>
                 </div>
             </section>
+            {/* Divisor de cores visível apenas em telas pequenas */}
             <div className="flex lg:hidden w-full h-1 flex-row gap-3 justify-evenly">
                 <div className="w-full h-1 bg-[#E72B78]"></div>
                 <div className="w-full h-1 bg-[#36BCEE]"></div>
