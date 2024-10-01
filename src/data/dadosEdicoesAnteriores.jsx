@@ -12,24 +12,24 @@ export const dadosEdicoesAnteriores = [
     edicao: "I WASHES",
     local : "Maceió - Al",
     anoDaEdicao: "(2016)",
-    linkWebsite: "",
-    linkAnalEvento: ""
+    linkWebsite: "http://reuse.cos.ufrj.br/washes2016/",
+    linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/369"
   },
   { // Segunda Edição WASHES washes-II-Salvador
     imagem: ImagemSalvador,
     edicao: "II WASHES",
     local : "Salvador - BA",
     anoDaEdicao: "(2017)",
-    linkWebsite: "",
-    linkAnalEvento: ""
+    linkWebsite: "http://reuse.cos.ufrj.br/washes-in-reuse-2017/",
+    linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/370"
   },
   { // Terceira Edição WASHES
     imagem: ImagemNatal,
     edicao: "II WASHES",
     local : "Natal - RN ",
     anoDaEdicao: "(2018)",
-    linkWebsite: "",
-    linkAnalEvento: ""
+    linkWebsite: "https://sites.google.com/view/washes2018/home",
+    linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/218"
   },
   { // Quarta Edição WASHES
     imagem: ImagemBelem,
@@ -37,7 +37,7 @@ export const dadosEdicoesAnteriores = [
     local : "Belém - PA",
     anoDaEdicao: "(2019)",
     linkWebsite: "",
-    linkAnalEvento: ""
+    linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/387"
   },
   { // Quinta Edição WASHES
     imagem: ImagemRemoto,
@@ -45,15 +45,15 @@ export const dadosEdicoesAnteriores = [
     local : "Remoto",
     anoDaEdicao: "(2020)",
     linkWebsite: "",
-    linkAnalEvento: ""
+    linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/583"
   },
   { // Sexta Edição WASHES
     imagem: ImagemRemoto,
     edicao: "VI WASHES",
     local : "Remoto",
     anoDaEdicao: "(2021)",
-    linkWebsite: "",
-    linkAnalEvento: ""
+    linkWebsite: "https://csbc.ufsc.br/eventos/washes/",
+    linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/762"
   },
   { // Sétima Edição WASHES
     imagem: ImagemNiteroi,
@@ -61,17 +61,17 @@ export const dadosEdicoesAnteriores = [
     local : "Niterói - RJ",
     anoDaEdicao: "(2022)",
     linkWebsite: "",
-    linkAnalEvento: ""
+    linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/932"
   },
   { // Oitava Edição WASHES
     imagem: ImagemJoaoPessoa,
     edicao: "VIII WASHES",
     local : "João Pessoa - PB",
     anoDaEdicao: "(2023)",
-    linkWebsite: "",
-    linkAnalEvento: ""
+    linkWebsite: "https://csbc.sbc.org.br/2023/washes/",
+    linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/1116"
   },
-  // Adicione edições futura abaixo
+  // Adicione edições futuras abaixo
 ]
 
 
