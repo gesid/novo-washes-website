@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="pt-16">
+      <div className="pt-[56px]">
         <Routes>
           <Route index element={<Home />} />
           <Route path="/quem-somos" element={<QuemSomos />} />
