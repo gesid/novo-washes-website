@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import ComitePrograma from "../components/ComitePrograma";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { BannerWASHES2024 } from "../components/bannerWASHES2024";
+import { TopicoDeInteresse } from "../components/topicoDeInteresse";
 
 const Washes2024 = () => {
   
@@ -70,6 +71,7 @@ const Washes2024 = () => {
   return (
     <section>
       <BannerWASHES2024/>
+      <TopicoDeInteresse/>
       <div className="container mx-auto px-4 py-10">
         {/* Membros Permanentes */}
         <h1 className="text-center text-2xl font-bold mb-8">Membros Permanentes</h1>
