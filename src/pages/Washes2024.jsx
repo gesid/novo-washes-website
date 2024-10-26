@@ -4,6 +4,8 @@ import ComitePrograma from "../components/ComitePrograma";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { BannerWASHES2024 } from "../components/bannerWASHES2024";
 import { TopicoDeInteresse } from "../components/topicoDeInteresse";
+import { ChamadaDeTrabalhos } from "../components/ChamadaDeTrabalhos";
+import { dadosChamadaDeTrabalho } from "../data/dadosChamadaDeTrabalhos";
 
 const Washes2024 = () => {
   
@@ -72,6 +74,18 @@ const Washes2024 = () => {
     <section>
       <BannerWASHES2024/>
       <TopicoDeInteresse/>
+
+      <div className="max-w-screen-xl my-16 mx-auto py-2 flex flex-col gap-5 lg:px-16 md:px-10 px-5 text-[#2f2f2f]">
+        <h1 className="font-bold lg:text-3xl text-2xl">Chamada de Trabalhos</h1>
+        {dadosChamadaDeTrabalho.map((dados, index) => (
+          <ChamadaDeTrabalhos
+            key={index}
+            titulo={dados.titulo}
+            conteudo={dados.conteudo}
+          />
+        ))}
+      </div>
+
       <div className="container mx-auto px-4 py-10">
         {/* Membros Permanentes */}
         <h1 className="text-center text-2xl font-bold mb-8">Membros Permanentes</h1>
