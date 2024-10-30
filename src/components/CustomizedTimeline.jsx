@@ -18,8 +18,8 @@ const CustomConnector = styled(TimelineConnector)({
   backgroundColor: "#36BCEE",
 });
 
-const titleColors = ["#E72B78", "#74C76B", "#E46F1B", "#36BCEE"]; // Alternating colors for titles
-const dotColors = ["#E72B78", "#74C76B", "#E46F1B", "#36BCEE"]; // Alternating colors for TimelineDot
+const titleColors = ["#E72B78", "#74C76B", "#E46F1B", "#36BCEE"]; // Alternando Cores para títulos
+const dotColors = ["#E72B78", "#74C76B", "#E46F1B", "#36BCEE"]; // Alternando Cores para TimelineDo
 
 export default function CustomizedTimeline() {
   return (
