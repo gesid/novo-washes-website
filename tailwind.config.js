@@ -8,7 +8,8 @@ export default {
     extend: {
       backgroundImage: {
         "banner-hero": "url(src/assets/imgs/banner-hero-home.svg)",
-        "banner-hero-quemSomos": "url(src/assets/imgs/banner-hero-home-quemSomos.png)",
+        "banner-hero-home-quemSomos": "url(src/assets/imgs/banner-hero-home-quemSomos.png)",
+        'banner-hero-quemSomos': "url(src/assets/imgs/banner-hero-quemSomos.png)",
         "banner-hero-washes2024": "url(src/assets/imgs/banner-hero-home-washes2024.png)",
         // Altere o caminho da nova foto do local do próximo evento abaixo
         "banner-hero-imagembannerWASHES202*":"url(src/assets/imgs/banner-hero-imagembannerWASHES2024.png)",
