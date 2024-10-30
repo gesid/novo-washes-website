@@ -20,7 +20,7 @@ function HeroQuemSomos() {
                         </Link>
                     </div>
                     {/* Ajustando o tamanho e estilo da section para diferentes tamanhos de tela */}
-                    <section className="w-full h-80 mt-5 bg-banner-hero-quemSomos bg-no-repeat bg-cover bg-center lg:w-1/2 lg:h-96">
+                    <section className="w-full h-80 mt-5 bg-banner-hero-home-quemSomos bg-no-repeat bg-cover bg-center lg:w-1/2 lg:h-96">
                     </section>
                 </div>
             </section>
