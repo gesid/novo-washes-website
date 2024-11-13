@@ -8,7 +8,8 @@ import { ChamadaDeTrabalhos } from "../components/ChamadaDeTrabalhos";
 import { Programacao } from "../components/Programacao";
 import { dadosChamadaDeTrabalho } from "../data/dadosChamadaDeTrabalhos";
 import { dadosProgramacao } from "../data/dadosProgramacao";
-
+import { dadosMembros } from "../data/dadosMembros";
+import { dadosCoordenadores } from "../data/dadosCoordenadores";
 
 const Washes2024 = () => {
   
@@ -17,61 +18,6 @@ const Washes2024 = () => {
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen); // Alterna entre abrir e fechar
   };
-
-  const members = [
-    {
-      imgSrc: "src/assets/imgs/rodrigo_santos.jpg",
-      name: "Rodrigo Santos",
-      university: "Universidade Federal do Estado do Rio de Janeiro-UNIRIO",
-      memberType: "Membro Permanente",
-      linkedinUrl: "https://www.linkedin.com/in/profrodrigosantos/",
-      lattesUrl: "http://lattes.cnpq.br/8613736894676086",
-    },
-    {
-      imgSrc: "src/assets/imgs/Igor Steinmacher.jpg",
-      name: "Igor Steinmacher",
-      university: "Northern Arizona University-NAU",
-      memberType: "Membro Permanente",
-      linkedinUrl: "https://www.linkedin.com/in/igorsteinmacher/",
-      lattesUrl: "http://lattes.cnpq.br/5529725593221391",
-
-    },
-    {
-      imgSrc: "src/assets/imgs/Davi Viana.jpeg",
-      name: "Davi Viana",
-      university: "Universidade Federal do Maranhão-UFMA",
-      memberType: "Membro Permanente",
-      linkedinUrl: "https://www.linkedin.com/in/davi-viana-73032a55/",
-      lattesUrl: "http://lattes.cnpq.br/9297257833779277",
-    },
-    {
-      imgSrc: "src/assets/imgs/Awdren Fontão.jpg",
-      name: "Awdren Fontão",
-      university: "Universidade Federal do Mato Grosso do Sul-UFMS",
-      memberType: "Membro Permanente",
-      linkedinUrl: "https://www.linkedin.com/in/awdren-font%C3%A3o-5087b121/",
-      lattesUrl: "http://lattes.cnpq.br/0597440372595970"
-    },
-  ];
-
-  const coordinators = [
-    {
-      imgSrc: "src/assets/imgs/Allyson Allex.jpeg",
-      name: "Allysson Allex Araújo",
-      university: "Universidade Federal do Cariri-UFCA",
-      memberType: "Coordenador",
-      linkedinUrl: "https://www.linkedin.com/in/allyssonaraujo/",
-      lattesUrl: "http://lattes.cnpq.br/1768955171390815"
-    },
-    {
-      imgSrc: "src/assets/imgs/Anna Beatriz.jpg",
-      name: "Anna Beatriz",
-      university: "Universidade Federal do Ceará-UFC",
-      memberType: "Coordenadora",
-      linkedinUrl: "https://www.linkedin.com/in/anna-beatriz-marques/",
-      lattesUrl: "http://lattes.cnpq.br/5522150204610320",
-    },
-  ];
 
   return (
     <section>
@@ -107,10 +53,11 @@ const Washes2024 = () => {
       </div>
 
       <div className="container mx-auto px-4 py-10">
+        
         {/* Membros Permanentes */}
         <h1 className="text-center text-2xl font-bold mb-8">Membros Permanentes</h1>
-        <div className="flex justify-center flex-wrap gap-6 mb-12">
-          {members.map((member, index) => (
+        <div className="flex flex-wrap justify-around gap-4 mb-10">
+          {dadosMembros.map((member, index) => (
             <Card
               key={index}
               imgSrc={member.imgSrc}
@@ -125,8 +72,8 @@ const Washes2024 = () => {
 
         {/* Coordenação 2024 */}
         <h2 className="text-center text-2xl font-bold mb-8">Coordenação 2024</h2>
-        <div className="flex justify-center gap-2">
-          {coordinators.map((coordinator, index) => (
+        <div className="flex flex-wrap justify-center gap-20 mb-10">
+          {dadosCoordenadores.map((coordinator, index) => (
             <Card
               key={index}
               imgSrc={coordinator.imgSrc}
