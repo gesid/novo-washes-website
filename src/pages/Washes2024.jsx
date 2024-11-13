@@ -56,7 +56,7 @@ const Washes2024 = () => {
         
         {/* Membros Permanentes */}
         <h1 className="text-center text-2xl font-bold mb-8">Membros Permanentes</h1>
-        <div className="flex justify-center gap-2 mb-10">
+        <div className="flex flex-wrap justify-around gap-4 mb-10">
           {dadosMembros.map((member, index) => (
             <Card
               key={index}
@@ -72,7 +72,7 @@ const Washes2024 = () => {
 
         {/* Coordenação 2024 */}
         <h2 className="text-center text-2xl font-bold mb-8">Coordenação 2024</h2>
-        <div className="flex justify-center gap-2 mb-10 max-w-md mx-auto">
+        <div className="flex flex-wrap justify-center gap-20 mb-10">
           {dadosCoordenadores.map((coordinator, index) => (
             <Card
               key={index}

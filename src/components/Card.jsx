@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Card = ({ imgSrc, name, memberType, university, linkedinUrl, lattesUrl }) => {
   return (
-    <div className="w-[220px] h-full p-4 bg-white rounded-xl shadow-md overflow-hidden">
+    <div className="w-[300px] h-[320px] p-5 flex justify-center items-center bg-white rounded-xl shadow-md overflow-hidden border">
       <div className="flex flex-col items-center">
         <img
           src={imgSrc}
