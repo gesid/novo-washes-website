@@ -25,9 +25,6 @@ const Washes2024 = () => {
       
       <div className="max-w-screen-xl mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 lg:px-16 md:px-10 px-5 my-20">
         <h1 className="font-bold lg:text-3xl text-2xl">Programação</h1>
-        {/* <div className="w-full bg-[#2A5D82] text-white flex items-center p-2 text-3xl rounded-lg">
-          <p>Terça-Feira (23/07)</p>
-        </div> */}
         {dadosProgramacao.map((dados, index) => (
           <Programacao
             key={index}
