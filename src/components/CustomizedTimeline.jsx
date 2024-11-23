@@ -6,9 +6,12 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import AddCircleIcon from "@mui/icons-material/AddCircle";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
+import { dadosTimelineQuemSomos } from "../data/dadosTimelineQuemSomos";
+import { useState } from "react";
+
+import { IoIosAddCircle, IoIosRemoveCircle  } from "react-icons/io";
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(3, 2),
@@ -21,68 +24,40 @@ const CustomConnector = styled(TimelineConnector)({
 const titleColors = ["#E72B78", "#74C76B", "#E46F1B", "#36BCEE"]; // Alternando Cores para títulos
 const dotColors = ["#E72B78", "#74C76B", "#E46F1B", "#36BCEE"]; // Alternando Cores para TimelineDo
 
+const AnimatedContent = styled("div")({
+  overflow: "hidden",
+  transition: "max-height 0.5s ease-in-out",
+  maxHeight: 0, 
+});
+
+const RotatingIcon = styled("div")(({ isOpen }) => ({
+  display: "inline-block",
+  transition: "transform 0.3s ease-in-out",
+  transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
+}));
+
 export default function CustomizedTimeline() {
+
+  const [isOpen, setIsOpen] = useState([0])
+
+  const openDropDown = (index) => {
+    setIsOpen((prevIndexes) =>
+      prevIndexes.includes(index)
+        ? prevIndexes.filter((i) => i !== index)
+        : [...prevIndexes, index]
+    );
+  };
+
+
   return (
     <Timeline position="alternate">
-      {[
-        {
-          year: "2024",
-          title: "Primeira edição",
-          description:
-            "Realizado em *Local*, o WASHES teve X artigos publicados. Saiba mais!",
-        },
-        {
-          year: "2023",
-          title: "Segunda edição",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis gravida enim, in aliquet nulla varius vel.",
-        },
-        {
-          year: "2022",
-          title: "Terceira edição",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis gravida enim, in aliquet nulla varius vel.",
-        },
-        {
-          year: "2021",
-          title: "Quarta edição",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis gravida enim, in aliquet nulla varius vel.",
-        },
-        {
-          year: "2020",
-          title: "Quarta edição",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis gravida enim, in aliquet nulla varius vel.",
-        },
-        {
-          year: "2019",
-          title: "Quarta edição",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis gravida enim, in aliquet nulla varius vel.",
-        },
-        {
-          year: "2018",
-          title: "Quarta edição",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis gravida enim, in aliquet nulla varius vel.",
-        },
-        {
-          year: "2017",
-          title: "Quarta edição",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis gravida enim, in aliquet nulla varius vel.",
-        },
-        {
-          year: "2016",
-          title: "Quarta edição",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis gravida enim, in aliquet nulla varius vel.",
-        },
-      ].map((item, index) => (
+      {dadosTimelineQuemSomos.map((item, index) => {
+        const openIndexes = isOpen.includes(index);
+
+        return(
         <TimelineItem key={index}>
-          <TimelineOppositeContent>
-            <Typography variant="h6" sx={{ color: "#000" }}>
+          <TimelineOppositeContent> 
+            <Typography className="py-2" style={{fontFamily:"Sofia Sans", fontSize: "24px" }} sx={{ color: "#2f2f2f" }}>
               {item.year}
             </Typography>
           </TimelineOppositeContent>
@@ -93,25 +68,40 @@ export default function CustomizedTimeline() {
                 backgroundColor: dotColors[index % dotColors.length],
                 color: "#fff",
               }}
+              onClick={() => openDropDown(index)}
             >
-              <AddCircleIcon />
+              <RotatingIcon isOpen={openIndexes}> 
+                  {openIndexes ? (
+                        <IoIosRemoveCircle size={30}/>
+                      ) : (
+                        <IoIosAddCircle size={30}/>
+                      )}
+              </RotatingIcon>
             </TimelineDot>
-            <CustomConnector />
+            <CustomConnector style={{height: 90}}/>
           </TimelineSeparator>
           <TimelineContent>
-            <StyledPaper elevation={3}>
-              <Typography
-                variant="h6"
-                component="h1"
-                sx={{ color: titleColors[index % titleColors.length] }}
-              >
-                {item.title}
-              </Typography>
-              <Typography sx={{ color: "#000" }}>{item.description}</Typography>
-            </StyledPaper>
+            <AnimatedContent
+              style={{
+                maxHeight: openIndexes ? "500px" : "0",
+              }}
+            >
+              <StyledPaper style={{padding: 2}}>
+                <div className="py-1.5">
+                  <Typography 
+                    style={{fontFamily:"Sofia Sans", fontSize: "24px" }}
+                    sx={{ color: titleColors[index % titleColors.length] }}
+                  >
+                    {item.title}
+                  </Typography>
+                    <Typography dangerouslySetInnerHTML={{ __html: item.description }}  style={{fontFamily:"Sofia Sans", fontSize: "18px" }} sx={{ color: "#2f2f2f" }}></Typography>
+                </div>
+              </StyledPaper>
+            </AnimatedContent>
           </TimelineContent>
         </TimelineItem>
-      ))}
+        )
+      })}
     </Timeline>
   );
 }
