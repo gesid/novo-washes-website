@@ -3,7 +3,8 @@ import CustomizedTimeline from "../components/CustomizedTimeline";
 const QuemSomos = () => {
   return (
     <section>
-      <div className="w-full h-96 flex flex-col items-center justify-center lg:h-dvh lg:bg-banner-hero-quemSomos lg:bg-no-repeat lg:bg-cover lg:bg-center">
+      <div className="w-full lg:h-[700px]  h-[450px] flex flex-col items-center justify-center relative overflow-hidden">
+        <img className="lg:w-[950px] w-[512px] absolute lg:top-[-25%] lg:left-[52%] md:top-[-25%] md:left-[52%] top-[-15%] left-[23%] opacity-15" src="src/assets/imgs/logo_washes.svg" alt="" />
         <div className="flex flex-col items-center justify-center mx-5 gap-16 lg:gap-32">
           <div className="max-w-screen-xl w-full flex flex-col items-center justify-between mx-5 text-center">
             <h2 className="text-2xl mb-3 text-gray-500 font-semibold lg:hidden">
@@ -11,7 +12,7 @@ const QuemSomos = () => {
             </h2>
             <h1 className="text-2xl font-bold text-zinc-800 mx-5 lg:text-6xl">
               Um ambiente para a <span className='text-[#E72B78]'>comunidade brasileira</span> discutir <span className='text-[#E72B78]'>desafios</span> que
-              influenciam o <span className='text-[#E72B78]'>desenvolvimento</span> e uso de <span className='text-[#E72B78]'>software, além de fomentar colaborações com a indústria</span>
+              influenciam o <span className='text-[#E72B78]'>desenvolvimento e uso </span> de software, além de fomentar <span className='text-[#E72B78]'> colaborações com a indústria</span>
             </h1>
           </div>
         </div>
@@ -36,7 +37,7 @@ const QuemSomos = () => {
         </div>
       </div>
 
-      <div className="container mx-auto my-10 flex flex-col gap-7 lg:gap-20 px-5">
+      <div className="container mx-auto my-10 flex flex-col gap-7 lg:gap-20 px-5 ">
         <h1 className="text-3xl lg:text-4xl font-semibold text-[#0D6080]">Nossa história</h1>
         <div className="text-left gap-7 lg:gap-8 lg:items-start lg:text-left">
           <CustomizedTimeline />
