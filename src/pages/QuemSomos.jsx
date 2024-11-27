@@ -37,7 +37,7 @@ const QuemSomos = () => {
         </div>
       </div>
 
-      <div className="container mx-auto my-10 flex flex-col gap-7 lg:gap-20 px-5 ">
+      <div className="container mx-auto my-10 flex flex-col gap-7 lg:gap-20 px-5">
         <h1 className="text-3xl lg:text-4xl font-semibold text-[#0D6080]">Nossa história</h1>
         <div className="text-left gap-7 lg:gap-8 lg:items-start lg:text-left">
           <CustomizedTimeline />
