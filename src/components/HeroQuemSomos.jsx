@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 function HeroQuemSomos() {
     return (
         <>
-            <section id="heroQuemSomos" className="w-full flex flex-col items-center justify-center mt-8 mb-8 lg:my-24 lg:flex-row">
-                <div className="max-w-screen-2xl flex flex-col gap-7 justify-center items-center lg:flex-row lg:gap-20">
+            <section id="heroQuemSomos" className="container mx-auto w-full flex flex-col items-center justify-center mt-10 mb-8 lg:my-24 lg:flex-row px-5">
+                <div className="flex flex-col gap-7 justify-center items-center lg:flex-row">
                     <div className="flex flex-col items-center text-center mx-5 gap-7 lg:gap-8 lg:items-start lg:text-left">
                         <h1 className="text-3xl lg:text-4xl font-semibold text-[#0D6080]">QUEM SOMOS?</h1>
                         <p className="text-lg font-light text-[#2F2F2F] lg:text-3xl">
@@ -13,15 +13,18 @@ function HeroQuemSomos() {
                         <Link
                             to="/quem-somos"
                             className="px-4 py-2 flex justify-center bg-[#36BCEE] hover:bg-white
-                            text-base text-white hover:text-[#36BCEE] hover:border hover:border-[#36BCEE] cursor-pointer
+                            text-base text-white hover:text-[#36BCEE] hover:outline hover:outline-2 cursor-pointer
                             rounded transition-colors duration-300 lg:px-5 lg:py-3 lg:text-2xl"
                         >
                             Saiba mais!
                         </Link>
                     </div>
-                    {/* Ajustando o tamanho e estilo da section para diferentes tamanhos de tela */}
-                    <section className="w-full h-80 mt-5 bg-banner-hero-home-quemSomos bg-no-repeat bg-cover bg-center lg:w-1/2 lg:h-96">
+                    <section className='flex justify-center'>
+                        <img src="src/assets/banners/banner-hero-home-quemSomos.png" alt="" 
+                            className="lg:max-w-md md:max-w-sm px-5"
+                        />
                     </section>
+                    {/* Ajustando o tamanho e estilo da section para diferentes tamanhos de tela */}
                 </div>
             </section>
             {/* Divisor de cores visível apenas em telas pequenas */}
