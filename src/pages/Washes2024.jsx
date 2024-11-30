@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useRef, useEffect} from "react";
 import Card from "../components/Card";
 import ComitePrograma from "../components/ComitePrograma";
-import { SlArrowDown, SlArrowUp } from "react-icons/sl";
+import { SlArrowDown} from "react-icons/sl";
 import { BannerWASHES2024 } from "../components/bannerWASHES2024";
 import { TopicoDeInteresse } from "../components/topicoDeInteresse";
 import { ChamadaDeTrabalhos } from "../components/ChamadaDeTrabalhos";
@@ -14,16 +14,24 @@ import { dadosCoordenadores } from "../data/dadosCoordenadores";
 const Washes2024 = () => {
   
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Controle do dropdown
+  const contentRef = useRef(null); 
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen); // Alterna entre abrir e fechar
   };
 
+  useEffect(() => {
+    if (isDropdownOpen && contentRef.current) {
+      contentRef.current.style.maxHeight = `${contentRef.current.scrollHeight}px`;
+    } else if (contentRef.current) {
+      contentRef.current.style.maxHeight = '0px';
+  }}, [isDropdownOpen]);
+
   return (
     <section>
       <BannerWASHES2024/>
       
-      <div className="max-w-screen-xl mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 lg:px-16 md:px-10 px-5 my-20">
+      <div className="container mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 my-20">
         <h1 className="font-bold lg:text-3xl text-2xl">Programação</h1>
         {dadosProgramacao.map((dados, index) => (
           <Programacao
@@ -38,7 +46,7 @@ const Washes2024 = () => {
       </div>
       <TopicoDeInteresse/>
 
-      <div className="max-w-screen-xl my-16 mx-auto py-2 flex flex-col gap-5 lg:px-16 md:px-10 px-5 text-[#2f2f2f]">
+      <div className="container my-16 mx-auto py-2 flex flex-col gap-5 text-[#2f2f2f]">
         <h1 className="font-bold lg:text-3xl text-2xl">Chamada de Trabalhos</h1>
         {dadosChamadaDeTrabalho.map((dados, index) => (
           <ChamadaDeTrabalhos
@@ -84,22 +92,23 @@ const Washes2024 = () => {
         </div>
 
         {/* Dropdown Comitê de Programa */}
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-center ">
           <div
             className="flex justify-center items-center cursor-pointer"
             onClick={toggleDropdown} // Alterna o dropdown ao clicar na div
           >
-            <h2 className="text-2xl font-bold mx-2">Comitê de Programa</h2>
-            {isDropdownOpen ? <SlArrowUp /> : <SlArrowDown />}
+            <h2 className="text-2xl font-bold mx-2" >Comitê de Programa</h2>
+            <div className={`transition-transform duration-500 ${isDropdownOpen ? 'rotate-180' : ''}`}>
+              <SlArrowDown />
+
+            </div>
           </div>
 
           {/* Transição suave do conteúdo do dropdown */}
           <div
-            className={`transition-all duration-500 ease-in-out overflow-hidden ${
-              isDropdownOpen ? "max-h-full opacity-100" : "max-h-0 opacity-0"
-            }`}
+            className={`transition-all duration-500 ease-in-out overflow-hidden `}
           >
-            <div className={`mt-4 ${isDropdownOpen ? "block" : "hidden"}`}>
+            <div ref={contentRef} style={{ transition: 'max-height 0.5s ease-in-out' }}>
               <ComitePrograma />
             </div>
           </div>
