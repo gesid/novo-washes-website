@@ -1,7 +1,7 @@
-import { useState, useRef, useEffect} from "react";
+import { useState, useRef, useEffect } from "react";
 import Card from "../components/Card";
 import ComitePrograma from "../components/ComitePrograma";
-import { SlArrowDown} from "react-icons/sl";
+import { SlArrowDown } from "react-icons/sl";
 import { BannerWASHES2024 } from "../components/bannerWASHES2024";
 import { TopicoDeInteresse } from "../components/topicoDeInteresse";
 import { ChamadaDeTrabalhos } from "../components/ChamadaDeTrabalhos";
@@ -12,9 +12,9 @@ import { dadosMembros } from "../data/dadosMembros";
 import { dadosCoordenadores } from "../data/dadosCoordenadores";
 
 const Washes2024 = () => {
-  
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Controle do dropdown
-  const contentRef = useRef(null); 
+  const [anoAtual] = useState(2024); // Controle do ano atual
+  const contentRef = useRef(null);
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen); // Alterna entre abrir e fechar
@@ -24,13 +24,16 @@ const Washes2024 = () => {
     if (isDropdownOpen && contentRef.current) {
       contentRef.current.style.maxHeight = `${contentRef.current.scrollHeight}px`;
     } else if (contentRef.current) {
-      contentRef.current.style.maxHeight = '0px';
-  }}, [isDropdownOpen]);
+      contentRef.current.style.maxHeight = "0px";
+    }
+  }, [isDropdownOpen]);
+
+  const coordenadoresDoAno = dadosCoordenadores[anoAtual] || []; // Filtra os coordenadores do ano atual
 
   return (
     <section>
-      <BannerWASHES2024/>
-      
+      <BannerWASHES2024 />
+
       <div className="container mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 my-20">
         <h1 className="font-bold lg:text-3xl text-2xl">Programação</h1>
         {dadosProgramacao.map((dados, index) => (
@@ -44,7 +47,7 @@ const Washes2024 = () => {
           />
         ))}
       </div>
-      <TopicoDeInteresse/>
+      <TopicoDeInteresse />
 
       <div className="container my-16 mx-auto py-2 flex flex-col gap-5 text-[#2f2f2f]">
         <h1 className="font-bold lg:text-3xl text-2xl">Chamada de Trabalhos</h1>
@@ -58,7 +61,6 @@ const Washes2024 = () => {
       </div>
 
       <div className="container mx-auto px-4 py-10">
-        
         {/* Membros Permanentes */}
         <h1 className="text-center text-2xl font-bold mb-8">Membros Permanentes</h1>
         <div className="flex flex-wrap justify-around gap-4 mb-10">
@@ -75,10 +77,12 @@ const Washes2024 = () => {
           ))}
         </div>
 
-        {/* Coordenação 2024 */}
-        <h2 className="text-center text-2xl font-bold mb-8">Coordenação 2024</h2>
+        {/* Coordenação por Ano */}
+        <h2 className="text-center text-2xl font-bold mb-8">
+          Coordenação {anoAtual}
+        </h2>
         <div className="flex flex-wrap justify-center gap-20 mb-10">
-          {dadosCoordenadores.map((coordinator, index) => (
+          {coordenadoresDoAno.map((coordinator, index) => (
             <Card
               key={index}
               imgSrc={coordinator.imgSrc}
@@ -97,10 +101,13 @@ const Washes2024 = () => {
             className="flex justify-center items-center cursor-pointer"
             onClick={toggleDropdown} // Alterna o dropdown ao clicar na div
           >
-            <h2 className="text-2xl font-bold mx-2" >Comitê de Programa</h2>
-            <div className={`transition-transform duration-500 ${isDropdownOpen ? 'rotate-180' : ''}`}>
+            <h2 className="text-2xl font-bold mx-2">Comitê de Programa</h2>
+            <div
+              className={`transition-transform duration-500 ${
+                isDropdownOpen ? "rotate-180" : ""
+              }`}
+            >
               <SlArrowDown />
-
             </div>
           </div>
 
@@ -108,7 +115,10 @@ const Washes2024 = () => {
           <div
             className={`transition-all duration-500 ease-in-out overflow-hidden `}
           >
-            <div ref={contentRef} style={{ transition: 'max-height 0.5s ease-in-out' }}>
+            <div
+              ref={contentRef}
+              style={{ transition: "max-height 0.5s ease-in-out" }}
+            >
               <ComitePrograma />
             </div>
           </div>
