@@ -20,7 +20,7 @@ export function TopicoDeInteresse() {
 
   return (
     <section className="mt-10">
-      <div className="max-w-screen-xl mx-auto flex flex-col gap-5 lg:px-16 md:px-10 px-5">
+      <div className="container mx-auto flex flex-col gap-5">
         <h1 className="lg:text-3xl md:text-2xl text-xl font-bold text-[#2f2f2f]">Tópicos de Interesse</h1>
         <p className="lg:text-xl md:text-lg text-base text-[#2f2f2f] text-justify">
           {/* Descrição sobre os tópicos do WASHES  */}
