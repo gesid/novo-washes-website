@@ -1,5 +1,6 @@
 
-export const dadosProgramacao = [
+export const dadosProgramacao = {
+  2024: [
   { 
     data: "(23/07)",
     horarioDeInicio: "8:30 AM",
@@ -149,24 +150,38 @@ export const dadosProgramacao = [
       },
 
     ]
-
-  },
-  // Adicione mais dias e apresentações abaixo
-  // {
-  //   data: "",
-  //   horarioDeInicio: "",
-  //   apresentador:"",
-  //   sessao: "",
-  //   programacao:[
-  //     {
-  //       horarioApresentacao: "",
-  //       temaApresentacao:""
-  //     },
-
-  //   ]
-
-  // },
-  
-  
-]
+  }, 
+],
+  2025: [
+    { 
+      data: "",
+      horarioDeInicio: "",
+      apresentador:"",
+      sessao: "",
+      programacao:[
+        {
+          horarioApresentacao: "",
+          temaApresentacao: ""
+        },
+        {
+          horarioApresentacao: "",
+          temaApresentacao: ""
+        },
+        {
+          horarioApresentacao: "",
+          temaApresentacao: ""
+        },
+        {
+          horarioApresentacao: "",
+          temaApresentacao: "",
+        },
+        {
+          horarioApresentacao: "",
+          temaApresentacao: ""
+        },
+        
+      ]
+    },
+  ]
+}
 
