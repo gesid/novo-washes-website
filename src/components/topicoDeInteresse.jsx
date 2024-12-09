@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect  } from "react";
-import { RiArrowDownWideFill} from "react-icons/ri";
-import { dadosTopicoDeInteresse } from '../data/dadosTopicosDeInteresse';
+import { RiArrowDownWideFill } from "react-icons/ri";
+import {listaTopicos} from "./listaTopicosDeInteresse"
+import PropTypes from 'prop-types';
 
-export function TopicoDeInteresse() {
+export function TopicoDeInteresse({anoAtual}) {
 
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef(null);
@@ -20,7 +21,7 @@ export function TopicoDeInteresse() {
 
   return (
     <section className="mt-10">
-      <div className="container mx-auto flex flex-col gap-5">
+      <div className="container px-5 mx-auto flex flex-col gap-5">
         <h1 className="lg:text-3xl md:text-2xl text-xl font-bold text-[#2f2f2f]">Tópicos de Interesse</h1>
         <p className="lg:text-xl md:text-lg text-base text-[#2f2f2f] text-justify">
           {/* Descrição sobre os tópicos do WASHES  */}
@@ -39,19 +40,14 @@ export function TopicoDeInteresse() {
             className="transition-all duration-500 ease-in-out overflow-hidden max-h-0 pt-3"
             style={{ transition: 'max-height 0.5s ease-in-out' }}
           >
-            <ul className="list-disc list-inside">
-                {dadosTopicoDeInteresse.map((topicos , index) => (
-                  <li
-                    key={index}
-                    className="lg:text-xl md:text-lg text-base text-[#2f2f2f] mb-3 font-semibold lg:text-left text-justify"
-                  >
-                    {topicos}
-                  </li>
-                ))}
-            </ul>
+            {listaTopicos(anoAtual)}
           </div>
         </div>
       </div>
     </section>
   );
+}
+
+TopicoDeInteresse.propTypes = {
+  anoAtual: PropTypes.string.isRequired,
 }

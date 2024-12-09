@@ -2,8 +2,7 @@ import { IoAddCircleOutline, IoRemoveCircleOutline} from "react-icons/io5";
 import PropTypes from 'prop-types';
 import {  useState, useRef, useEffect  } from "react";
 
-export function Programacao({data,horarioDeInicio, apresentador, sessao, programacao }){
-
+export function Programacao({data,horarioDeInicio, apresentador, sessao, programacao}){
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef(null);
 
@@ -20,7 +19,7 @@ export function Programacao({data,horarioDeInicio, apresentador, sessao, program
 
   return(
     <section>
-      <div className="w-full bg-[#2A5D82] border border-[#2A5D82] rounded-xl flex text-white" onClick={openDropDown}>
+      <div className=" w-full bg-[#2A5D82] border border-[#2A5D82] rounded-xl flex text-white" onClick={openDropDown}>
         <div className="bg-[#003358] px-4 rounded-s-xl flex flex-col gap-2 items-center lg:text-[28px] md:text-2xl text-xl p-5 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
           <span className="text-center lg:text-xl md:text-xl text-lg"> {data}</span>
           <span className="text-center"> {horarioDeInicio} </span>
