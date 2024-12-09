@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import Card from "../components/Card";
-import ComitePrograma from "../components/ComitePrograma";
 import { SlArrowDown } from "react-icons/sl";
 import { BannerWASHES2024 } from "../components/bannerWASHES2024";
 import { TopicoDeInteresse } from "../components/topicoDeInteresse";
@@ -10,6 +9,7 @@ import { dadosChamadaDeTrabalho } from "../data/dadosChamadaDeTrabalhos";
 import { dadosProgramacao } from "../data/dadosProgramacao";
 import { dadosMembros } from "../data/dadosMembros";
 import { dadosCoordenadores } from "../data/dadosCoordenadores";
+import { dadosComitePrograma } from "../data/dadosComitePrograma";
 
 const Washes2024 = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Controle do dropdown
@@ -28,30 +28,41 @@ const Washes2024 = () => {
     }
   }, [isDropdownOpen]);
 
+  const programacaoDoAno = dadosProgramacao[anoAtual] || []; // Filtra a programação do ano atual
   const coordenadoresDoAno = dadosCoordenadores[anoAtual] || []; // Filtra os coordenadores do ano atual
+  const chamadaDeTrabalhosDoAno = dadosChamadaDeTrabalho[anoAtual] || []; // Filtra as chamadas de trabalho do ano atual
+  const comiteProgramaDoAno = dadosComitePrograma[anoAtual] || []; // Filtra os membros do comitê de programa do ano atual
 
   return (
     <section>
-      <BannerWASHES2024 />
+      <BannerWASHES2024 
+        anoAtual={anoAtual}
+      />
 
-      <div className="container mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 my-20">
+      <div className="container px-5 mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 my-20">
         <h1 className="font-bold lg:text-3xl text-2xl">Programação</h1>
-        {dadosProgramacao.map((dados, index) => (
-          <Programacao
-            key={index}
-            data={dados.data}
-            horarioDeInicio={dados.horarioDeInicio}
-            apresentador={dados.apresentador}
-            sessao={dados.sessao}
-            programacao={dados.programacao}
-          />
-        ))}
+        {programacaoDoAno.length > 0 ? (
+          programacaoDoAno.map((dados, index) => (
+            <Programacao
+              key={index}
+              data={dados.data}
+              horarioDeInicio={dados.horarioDeInicio}
+              apresentador={dados.apresentador}
+              sessao={dados.sessao}
+              programacao={dados.programacao}
+            />
+            ))) : (
+                <h1 className="lg:text-3xl text-2xl"> Em breve </h1>
+            )}
       </div>
-      <TopicoDeInteresse />
 
-      <div className="container my-16 mx-auto py-2 flex flex-col gap-5 text-[#2f2f2f]">
+      <TopicoDeInteresse 
+        anoAtual={anoAtual}
+      />
+
+      <div className="container px-5 my-16 mx-auto py-2 flex flex-col gap-5 text-[#2f2f2f]">
         <h1 className="font-bold lg:text-3xl text-2xl">Chamada de Trabalhos</h1>
-        {dadosChamadaDeTrabalho.map((dados, index) => (
+        {chamadaDeTrabalhosDoAno.map((dados, index) => (
           <ChamadaDeTrabalhos
             key={index}
             titulo={dados.titulo}
@@ -60,7 +71,7 @@ const Washes2024 = () => {
         ))}
       </div>
 
-      <div className="container mx-auto px-4 py-10">
+      <div className="container mx-auto py-10">
         {/* Membros Permanentes */}
         <h1 className="text-center text-2xl font-bold mb-8">Membros Permanentes</h1>
         <div className="flex flex-wrap justify-around gap-4 mb-10">
@@ -96,10 +107,10 @@ const Washes2024 = () => {
         </div>
 
         {/* Dropdown Comitê de Programa */}
-        <div className="mt-8 text-center ">
+        <div className="mt-8 text-center">
           <div
             className="flex justify-center items-center cursor-pointer"
-            onClick={toggleDropdown} // Alterna o dropdown ao clicar na div
+            onClick={toggleDropdown}
           >
             <h2 className="text-2xl font-bold mx-2">Comitê de Programa</h2>
             <div
@@ -113,13 +124,27 @@ const Washes2024 = () => {
 
           {/* Transição suave do conteúdo do dropdown */}
           <div
-            className={`transition-all duration-500 ease-in-out overflow-hidden `}
+            className={`transition-all duration-500 ease-in-out overflow-hidden`}
           >
             <div
               ref={contentRef}
               style={{ transition: "max-height 0.5s ease-in-out" }}
             >
-              <ComitePrograma />
+              {/* Layout que quebra em duas colunas */}
+              <div className="flex flex-col md:flex-row justify-between px-4 py-4 space-y-8 md:space-y-0 md:space-x-8">
+                {Object.entries(comiteProgramaDoAno).map(([region, members], index) => (
+                  <div key={index} className="w-full md:w-1/2">
+                    <h3 className="font-bold mb-4 text-lg">{region}</h3>
+                    <ul className="space-y-2">
+                      {members.map((member, idx) => (
+                        <li key={idx}>
+                          {member.name} - {member.university}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
