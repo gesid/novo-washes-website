@@ -153,35 +153,22 @@ export const dadosProgramacao = {
   }, 
 ],
   2025: [
-    { 
-      data: "",
-      horarioDeInicio: "",
-      apresentador:"",
-      sessao: "",
-      programacao:[
-        {
-          horarioApresentacao: "",
-          temaApresentacao: ""
-        },
-        {
-          horarioApresentacao: "",
-          temaApresentacao: ""
-        },
-        {
-          horarioApresentacao: "",
-          temaApresentacao: ""
-        },
-        {
-          horarioApresentacao: "",
-          temaApresentacao: "",
-        },
-        {
-          horarioApresentacao: "",
-          temaApresentacao: ""
-        },
-        
-      ]
-    },
+    // { 
+    //   data: "",
+    //   horarioDeInicio: "",
+    //   apresentador:"",
+    //   sessao: "",
+    //   programacao:[
+    //     {
+    //       horarioApresentacao: "",
+    //       temaApresentacao: ""
+    //     },
+    //     {
+    //       horarioApresentacao: "",
+    //       temaApresentacao: ""
+    //     },
+    //   ]
+    // },
   ]
 }
 

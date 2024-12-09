@@ -35,24 +35,32 @@ const Washes2024 = () => {
 
   return (
     <section>
-      <BannerWASHES2024 />
+      <BannerWASHES2024 
+        anoAtual={anoAtual}
+      />
 
-      <div className="container mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 my-20">
+      <div className="container px-5 mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 my-20">
         <h1 className="font-bold lg:text-3xl text-2xl">Programação</h1>
-        {programacaoDoAno.map((dados, index) => (
-          <Programacao
-            key={index}
-            data={dados.data}
-            horarioDeInicio={dados.horarioDeInicio}
-            apresentador={dados.apresentador}
-            sessao={dados.sessao}
-            programacao={dados.programacao}
-          />
-        ))}
+        {programacaoDoAno.length > 0 ? (
+          programacaoDoAno.map((dados, index) => (
+            <Programacao
+              key={index}
+              data={dados.data}
+              horarioDeInicio={dados.horarioDeInicio}
+              apresentador={dados.apresentador}
+              sessao={dados.sessao}
+              programacao={dados.programacao}
+            />
+            ))) : (
+                <h1 className="lg:text-3xl text-2xl"> Em breve </h1>
+            )}
       </div>
-      <TopicoDeInteresse />
 
-      <div className="container my-16 mx-auto py-2 flex flex-col gap-5 text-[#2f2f2f]">
+      <TopicoDeInteresse 
+        anoAtual={anoAtual}
+      />
+
+      <div className="container px-5 my-16 mx-auto py-2 flex flex-col gap-5 text-[#2f2f2f]">
         <h1 className="font-bold lg:text-3xl text-2xl">Chamada de Trabalhos</h1>
         {chamadaDeTrabalhosDoAno.map((dados, index) => (
           <ChamadaDeTrabalhos
@@ -63,7 +71,7 @@ const Washes2024 = () => {
         ))}
       </div>
 
-      <div className="container mx-auto px-4 py-10">
+      <div className="container px-5 mx-auto py-10">
         {/* Membros Permanentes */}
         <h1 className="text-center text-2xl font-bold mb-8">Membros Permanentes</h1>
         <div className="flex flex-wrap justify-around gap-4 mb-10">

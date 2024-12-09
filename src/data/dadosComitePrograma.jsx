@@ -47,20 +47,20 @@ export const dadosComitePrograma = {
   },
   
   2025 : {
-    "Norte": [
-
+    "Norte": [ 
+      {name:"Em breve"}
     ],
     "Nordeste": [
-
+      {name:"Em breve"}
     ],
     "Centro-Oeste": [
-
+      {name:"Em breve"}
     ],
     "Sudeste": [
-
+      {name:"Em breve"}
     ],
     "Sul": [
-
+      {name:"Em breve"}
     ]
 
 
