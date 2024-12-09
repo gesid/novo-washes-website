@@ -71,7 +71,7 @@ const Washes2024 = () => {
         ))}
       </div>
 
-      <div className="container px-5 mx-auto py-10">
+      <div className="container mx-auto py-10">
         {/* Membros Permanentes */}
         <h1 className="text-center text-2xl font-bold mb-8">Membros Permanentes</h1>
         <div className="flex flex-wrap justify-around gap-4 mb-10">
