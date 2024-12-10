@@ -40,7 +40,7 @@ const Washes2024 = () => {
       />
 
       <div className="container px-5 mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 my-20">
-        <h1 className="font-bold lg:text-3xl text-2xl">Programação</h1>
+        <h1 className="font-bold text-[28px] lg:text-[32px]">Programação</h1>
         {programacaoDoAno.length > 0 ? (
           programacaoDoAno.map((dados, index) => (
             <Programacao
@@ -61,7 +61,7 @@ const Washes2024 = () => {
       />
 
       <div className="container px-5 my-16 mx-auto py-2 flex flex-col gap-5 text-[#2f2f2f]">
-        <h1 className="font-bold lg:text-3xl text-2xl">Chamada de Trabalhos</h1>
+        <h1 className="font-bold text-[28px] lg:text-[32px]">Chamada de Trabalhos</h1>
         {chamadaDeTrabalhosDoAno.map((dados, index) => (
           <ChamadaDeTrabalhos
             key={index}
@@ -73,7 +73,7 @@ const Washes2024 = () => {
 
       <div className="container mx-auto py-10">
         {/* Membros Permanentes */}
-        <h1 className="text-center text-2xl font-bold mb-8">Membros Permanentes</h1>
+        <h1 className="text-center text-[28px] lg:text-[32px] font-bold mb-8">Membros Permanentes</h1>
         <div className="flex flex-wrap justify-around gap-4 mb-10">
           {dadosMembros.map((member, index) => (
             <Card
@@ -89,7 +89,7 @@ const Washes2024 = () => {
         </div>
 
         {/* Coordenação por Ano */}
-        <h2 className="text-center text-2xl font-bold mb-8">
+        <h2 className="text-center text-[28px] lg:text-[32px] font-bold mb-8">
           Coordenação {anoAtual}
         </h2>
         <div className="flex flex-wrap justify-center gap-20 mb-10">
@@ -112,7 +112,7 @@ const Washes2024 = () => {
             className="flex justify-center items-center cursor-pointer"
             onClick={toggleDropdown}
           >
-            <h2 className="text-2xl font-bold mx-2">Comitê de Programa</h2>
+            <h2 className="text-[28px] lg:text-[32px] font-bold mx-2">Comitê de Programa</h2>
             <div
               className={`transition-transform duration-500 ${
                 isDropdownOpen ? "rotate-180" : ""

@@ -22,8 +22,8 @@ export function TopicoDeInteresse({anoAtual}) {
   return (
     <section className="mt-10">
       <div className="container px-5 mx-auto flex flex-col gap-5">
-        <h1 className="lg:text-3xl md:text-2xl text-xl font-bold text-[#2f2f2f]">Tópicos de Interesse</h1>
-        <p className="lg:text-xl md:text-lg text-base text-[#2f2f2f] text-justify">
+        <h1 className="text-[28px] lg:text-[32px] font-bold text-[#2f2f2f]">Tópicos de Interesse</h1>
+        <p className="lg:text-2xl text-lg  text-[#2f2f2f] text-justify">
           {/* Descrição sobre os tópicos do WASHES  */}
           Os tópicos do WASHES envolvem trabalhos de pesquisa diretamente relacionados aos aspectos sociais, humanos e econômicos de software e suas interseções e influências nas mais diversas áreas da Computação, não sendo restrito aos tópicos a seguir:
         </p>

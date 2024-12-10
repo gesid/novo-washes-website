@@ -22,7 +22,7 @@ export function ChamadaDeTrabalhos({titulo, conteudo}) {
       <div className={`w-full px-4 py-3 flex flex-row items-center justify-between shadow-md
         ${isOpen ? "rounded-t-[10px]" : "rounded-[10px]" }`} 
         onClick={openDropDown}>
-        <h2 className="lg:text-xl text-lg font-semibold">{titulo}</h2>
+        <h2 className="lg:text-2xl text-lg font-semibold">{titulo}</h2>
         <IoIosArrowDown className={`transition-transform duration-500 ${isOpen ? 'rotate-180' : ''}`}/>
       </div>
       <div className={`bg-white px-6 rounded-b-[10px] shadow-md w-full transition-all ease-in-out overflow-hidden origin-top`}

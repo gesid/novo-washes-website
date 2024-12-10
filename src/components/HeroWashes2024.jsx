@@ -13,8 +13,8 @@ function HeroWashes2024() {
                         </div>
                     </div>
                     <div className="flex flex-col items-center text-center mx-5 gap-7 lg:gap-8 lg:items-start lg:text-left">
-                        <h1 className="text-3xl lg:text-4xl font-semibold text-[#0D6080]">WASHES 2024</h1>
-                        <p className="text-lg font-light text-[#2F2F2F] lg:text-3xl lg:text-justify">
+                        <h1 className="text-[28px] lg:text-[32px] font-semibold text-[#0D6080]">WASHES 2024</h1>
+                        <p className="text-lg font-light text-[#2F2F2F] lg:text-[26px] leading-9 lg:text-justify">
                             O WASHES 2024 será realizado no formato presencial, como um evento satélite do <strong className="font-bold">44º Congresso da Sociedade Brasileira de Computação (SBC)</strong>, que será realizado nos dias 21 e 25 de julho de 2024.
                         </p>
                         <Link
