@@ -5,7 +5,7 @@ function FeedInsta() {
     return (
         <>
             <section className="w-full h-fit py-3.5 px-5 flex flex-col items-center justify-center gap-2 lg:px-2 lg:mt-24 mt-10 mb-10">
-                <p className="lg:text-4xl text-3xl text-center text-[#003358]">
+                <p className="text-[28px] lg:text-[32px] text-center text-[#003358]">
                     Acompanhe-nos nas{" "}
                     <span className="font-bold">Redes Sociais!</span>
                 </p>

@@ -25,12 +25,12 @@ const QuemSomos = () => {
 
       <div className="container mx-auto my-10 flex flex-col gap-7 justify-center items-center lg:flex-row lg:gap-20">
         <div className="flex flex-col items-center text-left mx-5 gap-7 lg:gap-8 lg:items-start lg:text-left">
-          <h1 className="text-3xl lg:text-4xl font-semibold text-[#0D6080]">Sobre</h1>
-          <p className="text-lg font-light text-[#2F2F2F] lg:text-3xl">O Workshop sobre <strong className="font-bold">Aspectos Sociais, Humanos e Econômicos de Software (WASHES)</strong> foca na interação entre algumas questões críticas que exercem influência sobre a engenharia e qualidade de software.</p>
-          <p className="text-lg font-light text-[#2F2F2F] lg:text-3xl">
+          <h1 className="text-[28px] lg:text-[32px] font-semibold text-[#0D6080]">Sobre</h1>
+          <p className="text-lg font-light text-[#2F2F2F] lg:text-[26px] leading-9">O Workshop sobre <strong className="font-bold">Aspectos Sociais, Humanos e Econômicos de Software (WASHES)</strong> foca na interação entre algumas questões críticas que exercem influência sobre a engenharia e qualidade de software.</p>
+          <p className="text-lg font-light text-[#2F2F2F] lg:text-[26px] leading-9">
             <strong className="font-bold">Fatores humanos</strong> e <strong className="font-bold">aspectos sociais</strong> em qualidade de software têm sido discutidos por pesquisadores e profissionais da indústria, dado que métodos, técnicas e ferramentas afetam (e são afetados) pelos stakeholders e suas interações, impactando as atividades do desenvolvimento de software.
           </p>
-          <p className="text-lg font-light text-[#2F2F2F] lg:text-3xl">
+          <p className="text-lg font-light text-[#2F2F2F] lg:text-[26px] leading-9">
             Da mesma forma, o software é uma <strong className="font-bold">fonte de valor para os negócios de diversas organizações</strong>, sejam elas fornecedoras ou adquirentes, representando um elemento crucial para o seu sucesso econômico.
             Este workshop aborda aspectos que impactam diretamente várias áreas da computação, como engenharia de software, ecossistemas de software, negócios, gestão de projetos, informática médica, computação aplicada à educação e ações sociais, entre outros.
           </p>
@@ -38,7 +38,7 @@ const QuemSomos = () => {
       </div>
 
       <div className="container mx-auto my-10 flex flex-col gap-7 lg:gap-20 px-5">
-        <h1 className="text-3xl lg:text-4xl font-semibold text-[#0D6080]">Nossa história</h1>
+        <h1 className="text-[28px] lg:text-[32px] font-semibold text-[#0D6080]">Nossa história</h1>
         <div className="text-left gap-7 lg:gap-8 lg:items-start lg:text-left">
           <CustomizedTimeline />
         </div>
