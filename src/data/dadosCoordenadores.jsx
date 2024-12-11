@@ -43,11 +43,11 @@ export const dadosCoordenadores = {
       lattesUrl: "http://lattes.cnpq.br/5522150204610320",
     },
     {
-      imgSrc: "",
+      imgSrc: "/assets/imgs/glaucia-braga-silva.jpg",
       name: "Glaucia Braga e Silva",
       university: "Universidade Federal de Viçosa",
       memberType: "Coordenadora",
-      linkedinUrl: "",
+      linkedinUrl: "https://www.linkedin.com/in/gláucia-braga-e-silva-a0b0a7ba",
       lattesUrl: "http://lattes.cnpq.br/2427091227765800"
     },
     {
@@ -56,7 +56,7 @@ export const dadosCoordenadores = {
       university: "Universidade Federal de Viçosa",
       memberType: "Social Media Chair",
       linkedinUrl: "https://www.linkedin.com/in/estelamirandabatista/",
-      lattesUrl: ""
+      lattesUrl: "http://lattes.cnpq.br/0016446811901913"
     }
   ],
 };
