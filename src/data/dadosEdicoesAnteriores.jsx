@@ -4,7 +4,7 @@ export const dadosEdicoesAnteriores = [
     edicao: "I WASHES",
     local : "Maceió - Al",
     anoDaEdicao: "(2016)",
-    linkWebsite: "",
+    linkWebsite: "/washes-2016",
     linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/369"
   },
   { // Segunda Edição WASHES
@@ -12,7 +12,7 @@ export const dadosEdicoesAnteriores = [
     edicao: "II WASHES",
     local : "Salvador - BA",
     anoDaEdicao: "(2017)",
-    linkWebsite: "",
+    linkWebsite: "/washes-2017",
     linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/370"
   },
   { // Terceira Edição WASHES
@@ -20,7 +20,7 @@ export const dadosEdicoesAnteriores = [
     edicao: "III WASHES",
     local : "Natal - RN ",
     anoDaEdicao: "(2018)",
-    linkWebsite: "",
+    linkWebsite: "/washes-2018",
     linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/218"
   },
   { // Quarta Edição WASHES
@@ -28,7 +28,7 @@ export const dadosEdicoesAnteriores = [
     edicao: "IV WASHES",
     local : "Belém - PA",
     anoDaEdicao: "(2019)",
-    linkWebsite: "",
+    linkWebsite: "/washes-2019",
     linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/387"
   },
   { // Quinta Edição WASHES
@@ -36,7 +36,7 @@ export const dadosEdicoesAnteriores = [
     edicao: "V WASHES",
     local : "Remoto",
     anoDaEdicao: "(2020)",
-    linkWebsite: "",
+    linkWebsite: "/washes-2020",
     linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/583"
   },
   { // Sexta Edição WASHES
@@ -44,7 +44,7 @@ export const dadosEdicoesAnteriores = [
     edicao: "VI WASHES",
     local : "Remoto",
     anoDaEdicao: "(2021)",
-    linkWebsite: "",
+    linkWebsite: "/washes-2021",
     linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/762"
   },
   { // Sétima Edição WASHES
@@ -52,7 +52,7 @@ export const dadosEdicoesAnteriores = [
     edicao: "VII WASHES",
     local : "Niterói - RJ",
     anoDaEdicao: "(2022)",
-    linkWebsite: "",
+    linkWebsite: "/washes-2022",
     linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/932"
   },
   { // Oitava Edição WASHES
@@ -60,8 +60,16 @@ export const dadosEdicoesAnteriores = [
     edicao: "VIII WASHES",
     local : "João Pessoa - PB",
     anoDaEdicao: "(2023)",
-    linkWebsite: "",
+    linkWebsite: "/washes-2024",
     linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/1116"
+  },
+  { // Nona Edição WASHES
+    imagem: "src/assets/edicoesAnterioresImages/washes-ix-brasilia.png",
+    edicao: "IX WASHES",
+    local : "Brasília - DF",
+    anoDaEdicao: "(2024)",
+    linkWebsite: "/washes-2024",
+    linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/1323"
   },
   // Adicione edições futuras abaixo
   // { 

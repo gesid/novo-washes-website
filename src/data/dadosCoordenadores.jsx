@@ -31,8 +31,32 @@ export const dadosCoordenadores = {
       name: "Luciana Zaina",
       university: "Universidade Federal de São Carlos",
       memberType: "Coordenadora",
-      linkedinUrl: "",
-      lattesUrl: "",
+      linkedinUrl: "https://www.linkedin.com/in/luciana-zaina-53a1a616/",
+      lattesUrl: "http://lattes.cnpq.br/0192085115595443",
     },
+    {
+      imgSrc: "src/assets/imgs/Anna Beatriz.jpg",
+      name: "Anna Beatriz",
+      university: "Universidade Federal do Ceará",
+      memberType: "Coordenadora",
+      linkedinUrl: "https://www.linkedin.com/in/anna-beatriz-marques/",
+      lattesUrl: "http://lattes.cnpq.br/5522150204610320",
+    },
+    {
+      imgSrc: "",
+      name: "Glaucia Braga e Silva",
+      university: "Universidade Federal de Viçosa",
+      memberType: "Coordenadora",
+      linkedinUrl: "",
+      lattesUrl: "http://lattes.cnpq.br/2427091227765800"
+    },
+    {
+      imgSrc: "src/assets/imgs/Estela Miranda.jpg",
+      name: "Estela Miranda",
+      university: "Universidade Federal de Viçosa",
+      memberType: "Social Media Chair",
+      linkedinUrl: "https://www.linkedin.com/in/estelamirandabatista/",
+      lattesUrl: ""
+    }
   ],
 };
