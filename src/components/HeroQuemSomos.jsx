@@ -20,7 +20,7 @@ function HeroQuemSomos() {
                         </Link>
                     </div>
                     <section className='flex justify-center'>
-                        <img src="src/assets/banners/banner-hero-home-quemSomos.png" alt="" 
+                        <img src="/assets/banners/banner-hero-home-quemSomos.png" alt="" 
                             className="lg:max-w-md md:max-w-sm px-5"
                         />
                     </section>

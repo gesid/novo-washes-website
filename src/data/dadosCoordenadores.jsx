@@ -1,7 +1,7 @@
 export const dadosCoordenadores = {
   2024: [
     {
-      imgSrc: "src/assets/imgs/Allyson Allex.jpeg",
+      imgSrc: "/assets/imgs/Allyson Allex.jpeg",
       name: "Allysson Allex Araújo",
       university: "Universidade Federal do Cariri",
       memberType: "Coordenador",
@@ -9,7 +9,7 @@ export const dadosCoordenadores = {
       lattesUrl: "http://lattes.cnpq.br/1768955171390815",
     },
     {
-      imgSrc: "src/assets/imgs/Anna Beatriz.jpg",
+      imgSrc: "/assets/imgs/Anna Beatriz.jpg",
       name: "Anna Beatriz",
       university: "Universidade Federal do Ceará",
       memberType: "Coordenadora",
@@ -19,7 +19,7 @@ export const dadosCoordenadores = {
   ],
   2025: [
     {
-      imgSrc: "src/assets/imgs/Allyson Allex.jpeg",
+      imgSrc: "/assets/imgs/Allyson Allex.jpeg",
       name: "Allysson Allex Araújo",
       university: "Universidade Federal do Cariri",
       memberType: "Coordenador",
@@ -27,7 +27,7 @@ export const dadosCoordenadores = {
       lattesUrl: "http://lattes.cnpq.br/1768955171390815",
     },
     {
-      imgSrc: "src/assets/imgs/Luciana Zaina.jpg",
+      imgSrc: "/assets/imgs/Luciana Zaina.jpg",
       name: "Luciana Zaina",
       university: "Universidade Federal de São Carlos",
       memberType: "Coordenadora",
@@ -35,7 +35,7 @@ export const dadosCoordenadores = {
       lattesUrl: "http://lattes.cnpq.br/0192085115595443",
     },
     {
-      imgSrc: "src/assets/imgs/Anna Beatriz.jpg",
+      imgSrc: "/assets/imgs/Anna Beatriz.jpg",
       name: "Anna Beatriz",
       university: "Universidade Federal do Ceará",
       memberType: "Coordenadora",
@@ -51,7 +51,7 @@ export const dadosCoordenadores = {
       lattesUrl: "http://lattes.cnpq.br/2427091227765800"
     },
     {
-      imgSrc: "src/assets/imgs/Estela Miranda.jpg",
+      imgSrc: "/assets/imgs/Estela Miranda.jpg",
       name: "Estela Miranda",
       university: "Universidade Federal de Viçosa",
       memberType: "Social Media Chair",

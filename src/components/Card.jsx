@@ -26,7 +26,7 @@ const Card = ({ imgSrc, name, memberType, university, linkedinUrl, lattesUrl }) 
             className="hover:text-blue-500"
           >
             <img
-              src="src/assets/imgs/linkedin_icon.png"
+              src="/assets/imgs/linkedin_icon.png"
               alt="LinkedIn"
               className="w-6 h-6"
             />
@@ -38,7 +38,7 @@ const Card = ({ imgSrc, name, memberType, university, linkedinUrl, lattesUrl }) 
             className="hover:text-blue-500"
           >
             <img
-              src="src/assets/imgs/lattes.svg"
+              src="/assets/imgs/lattes.svg"
               alt="Lattes"
               className="w-6 h-6"
           />
