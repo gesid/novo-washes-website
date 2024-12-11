@@ -28,7 +28,7 @@ function Navbar() {
           {[
             { name: 'HOME', path: '/' },
             { name: 'QUEM SOMOS', path: '/quem-somos' },
-            { name: 'WASHES 2024', path: '/washes-2024' },
+            { name: 'WASHES 2025', path: '/washes-2025' },
             { name: 'EDIÇÕES ANTERIORES', path: '/edicoes-anteriores' },
             { name: 'DATAWASHES', path: '/datawashes' },
           ].map((item, index) => (

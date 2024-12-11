@@ -11,7 +11,7 @@ function HeroQuemSomos() {
                             O WASHES é um workshop que aborda a interação entre fatores <strong className="font-bold">humanos</strong>, <strong className="font-bold">sociais</strong> e <strong className="font-bold">econômicos</strong> na <strong className="font-bold">Engenharia de Software</strong>, promovendo discussões sobre seu impacto no desenvolvimento e uso de software, bem como colaborações com a indústria.
                         </p>
                         <Link
-                            to="/quem-somos"
+                            to="/quem-somos" 
                             className="px-4 py-2 flex justify-center bg-[#36BCEE] hover:bg-white
                             text-base text-white hover:text-[#36BCEE] hover:outline hover:outline-2 cursor-pointer
                             rounded transition-colors duration-300 lg:px-5 lg:py-3 lg:text-2xl"

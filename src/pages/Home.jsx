@@ -1,14 +1,14 @@
 import FeedInsta from "../components/FeedInsta";
 import Hero from "../components/Hero";
 import HeroQuemSomos from "../components/HeroQuemSomos";
-import HeroWashes2024 from "../components/HeroWashes2024";
+import HeroWashes2025 from "../components/HeroWashes2025";
 
 function Home() {
     return (
         <div className="">
             <Hero />
             <HeroQuemSomos />
-            <HeroWashes2024 />
+            <HeroWashes2025 />
             <FeedInsta />
         </div>
     );
