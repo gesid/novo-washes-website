@@ -6,7 +6,7 @@ function Hero() {
         <>
             <section className="w-full h-96 flex gap-2 flex-row items-center justify-center lg:h-dvh lg:bg-banner-hero lg:bg-no-repeat lg:bg-cover lg:bg-center
             sm:bg-banner-hero sm:bg-no-repeat sm:bg-cover sm:bg-center relative overflow-hidden">
-                <img className="w-[512px] sm:hidden absolute top-[-10%] left-[25%] opacity-15" src="src/assets/imgs/logo_washes.svg" alt="" />
+                <img className="w-[512px] sm:hidden absolute top-[-10%] left-[25%] opacity-15" src="/assets/imgs/logo_washes.svg" alt="" />
                 <div className="flex flex-col items-center justify-center mx-5 gap-16 lg:gap-32">
                     <div className="max-w-screen-xl w-full flex flex-col items-center justify-between mx-5 text-center">
                         <h2 className="text-2xl mb-3 text-gray-600 font-semibold lg:hidden">

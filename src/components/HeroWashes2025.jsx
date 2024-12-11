@@ -6,7 +6,7 @@ function HeroWashes2025() {
             <section id="heroQuemSomos" className="container mx-auto flex flex-col mt-8 mb-8 lg:my-24 lg:flex-row px-5">
                 <div className="flex flex-col items-center lg:flex-row gap-7">
                     <div>
-                        <img className="lg:max-w-md md:max-w-sm" src="../src/assets/banners/banner-hero-home-washes2024.png" alt="Ilustração de pessoas trabalhando com dados e gráficos" />
+                        <img className="lg:max-w-md md:max-w-sm" src="/assets/banners/banner-hero-home-washes2024.png" alt="Ilustração de pessoas trabalhando com dados e gráficos" />
                         <div className='text-right pr-2'>
                             <p className="lg:text-7xl text-5xl text-[#6C757D] opacity-50 font-medium">WASHES</p>
                             <p className="lg:text-7xl text-5xl text-[#6C757D] opacity-50 font-light italic">2025</p>

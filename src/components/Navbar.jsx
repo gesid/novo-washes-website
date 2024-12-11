@@ -21,7 +21,7 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
-          <img src="../src/assets/imgs/logo_washes.svg" alt="Logo" className="h-8 mr-2" />
+          <img src="/assets/imgs/logo_washes.svg" alt="Logo" className="h-8 mr-2" />
           <span className="text-2xl font-medium">WASHES</span>
         </div>
         <div className="hidden lg:flex space-x-8">

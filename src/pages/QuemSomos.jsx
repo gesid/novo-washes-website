@@ -6,7 +6,7 @@ const QuemSomos = () => {
       <div className="w-full lg:h-[700px]  h-[450px] flex flex-col items-center justify-center relative overflow-hidden">
         <img
           className="lg:w-[950px] w-[512px] absolute lg:top-[-25%] lg:left-[52%] md:top-[-25%] md:left-[52%] top-[-15%] left-[23%] opacity-15"
-          src="src/assets/imgs/logo_washes.svg"
+          src="/assets/imgs/logo_washes.svg"
           alt=""
         />
         <div className="flex flex-col items-center justify-center mx-5 gap-16 lg:gap-32">
