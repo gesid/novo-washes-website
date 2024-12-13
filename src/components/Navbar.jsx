@@ -30,7 +30,11 @@ function Navbar() {
             { name: 'QUEM SOMOS', path: '/quem-somos' },
             { name: 'WASHES 2025', path: '/washes-2025' },
             { name: 'EDIÇÕES ANTERIORES', path: '/edicoes-anteriores' },
-            { name: 'DATAWASHES', path: '/datawashes' },
+            {
+              name: 'DATAWASHES',
+              path: 'https://datawashes.pythonanywhere.com',
+              external: true
+            },
           ].map((item, index) => (
             <Link
               key={index}
