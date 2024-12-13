@@ -12,10 +12,42 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  const handleItemClick = (path) => {
-    setSelected(path);
-    setIsOpen(false); // Fechar o menu ao selecionar um item (apenas para dispositivos móveis)
+  const handleItemClick = (path, external) => {
+    if (!external) {
+      setSelected(path);
+      setIsOpen(false); // Fechar o menu ao selecionar um item (apenas para dispositivos móveis)
+    }
   };
+
+  const renderNavItem = (item, index, isMobile = false) => (
+    <Link
+      key={index}
+      to={item.path}
+      onClick={() => handleItemClick(item.path, item.external)}
+      target={item.external ? "_blank" : "_self"}
+      rel={item.external ? "noopener noreferrer" : ""}
+      className={`text-gray-500 hover:text-white hover:bg-pink-500 px-3 py-2 rounded transition-colors duration-300 relative group ${selected === item.path ? 'font-bold' : ''
+        } ${isMobile ? 'text-2xl my-4' : ''}`}
+    >
+      {item.name}
+      <span
+        className={`absolute bottom-0 left-0 w-full h-1 ${selected === item.path ? 'bg-pink-500' : 'bg-transparent'
+          } group-hover:bg-pink-500 transition-all duration-300`}
+      ></span>
+    </Link>
+  );
+
+  const navItems = [
+    { name: 'HOME', path: '/' },
+    { name: 'QUEM SOMOS', path: '/quem-somos' },
+    { name: 'WASHES 2025', path: '/washes-2025' },
+    { name: 'EDIÇÕES ANTERIORES', path: '/edicoes-anteriores' },
+    {
+      name: 'DATAWASHES',
+      path: 'https://datawashes.pythonanywhere.com',
+      external: true
+    },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
@@ -25,27 +57,7 @@ function Navbar() {
           <span className="text-2xl font-medium">WASHES</span>
         </div>
         <div className="hidden lg:flex space-x-8">
-          {[
-            { name: 'HOME', path: '/' },
-            { name: 'QUEM SOMOS', path: '/quem-somos' },
-            { name: 'WASHES 2025', path: '/washes-2025' },
-            { name: 'EDIÇÕES ANTERIORES', path: '/edicoes-anteriores' },
-            { name: 'DATAWASHES', path: '/datawashes' },
-          ].map((item, index) => (
-            <Link
-              key={index}
-              to={item.path}
-              onClick={() => handleItemClick(item.path)}
-              className={`text-gray-500 hover:text-white hover:bg-pink-500 px-3 py-2 rounded transition-colors duration-300 relative group ${selected === item.path ? 'font-bold' : ''
-                }`}
-            >
-              {item.name}
-              <span
-                className={`absolute bottom-0 left-0 w-full h-1 ${selected === item.path ? 'bg-pink-500' : 'bg-transparent'
-                  } group-hover:bg-pink-500 transition-all duration-300`}
-              ></span>
-            </Link>
-          ))}
+          {navItems.map((item, index) => renderNavItem(item, index))}
         </div>
         <div className="lg:hidden">
           <button onClick={toggleMenu}>
@@ -58,31 +70,11 @@ function Navbar() {
           <button onClick={toggleMenu} className="absolute top-4 right-4">
             <FaTimes size={24} />
           </button>
-          {[
-            { name: 'HOME', path: '/' },
-            { name: 'QUEM SOMOS', path: '/quem-somos' },
-            { name: 'WASHES 2024', path: '/washes-2024' },
-            { name: 'EDIÇÕES ANTERIORES', path: '/edicoes-anteriores' },
-            { name: 'DATAWASHES', path: '/datawashes' },
-          ].map((item, index) => (
-            <Link
-              key={index}
-              to={item.path}
-              onClick={() => handleItemClick(item.path)}
-              className={`text-gray-500 text-2xl my-4 hover:text-white hover:bg-pink-500 px-3 py-2 rounded transition-colors duration-300 relative group ${selected === item.path ? 'font-bold' : ''
-                }`}
-            >
-              {item.name}
-              <span
-                className={`absolute bottom-0 left-0 w-full h-1 ${selected === item.path ? 'bg-pink-500' : 'bg-transparent'
-                  } group-hover:bg-pink-500 transition-all duration-300`}
-              ></span>
-            </Link>
-          ))}
+          {navItems.map((item, index) => renderNavItem(item, index, true))}
         </div>
       )}
     </nav>
   );
-};
+}
 
 export default Navbar;
