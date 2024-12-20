@@ -1,4 +1,3 @@
-import { RiBlueskyLine } from "react-icons/ri";
 import { FaInstagram,  FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 function FeedInsta() {
@@ -19,9 +18,6 @@ function FeedInsta() {
                     <a href="https://www.linkedin.com/in/washescommunity/" 
                         target="_blank" 
                         className="lg:border-none border border-[#2f2f2f3b] flex items-center justify-center gap-2 lg:hover:bg-[#dadadabe] py-2 px-4 sm:w-auto w-full rounded-full duration-300 transition ease-in-out hover:-translate-y-1 hover:scale-100"> <FaLinkedinIn size={25}/> <p> @WASHESCOMMUNITY</p></a>                    
-                    <a href="https://bsky.app/profile/washescommunity.bsky.social" 
-                        target="_blank" 
-                        className="lg:border-none border border-[#2f2f2f3b] flex items-center justify-center gap-2 lg:hover:bg-[#dadadabe] py-2 sm:w-auto w-full px-4 rounded-full duration-300 transition ease-in-out hover:-translate-y-1 hover:scale-100"> <RiBlueskyLine size={25}/> <p> @WASHESCOMMUNITY</p></a>
                 </div>
                 <div className="w-full h-fit flex flex-row gap-2 lg:h-96">
                     <div

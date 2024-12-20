@@ -11,9 +11,9 @@ import { dadosMembros } from "../data/dadosMembros";
 import { dadosCoordenadores } from "../data/dadosCoordenadores";
 import { dadosComitePrograma } from "../data/dadosComitePrograma";
 
-const Washes2024 = () => {
+const Washes2025 = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Controle do dropdown
-  const [anoAtual] = useState(2024); // Controle do ano atual
+  const [anoAtual] = useState(2026); // Controle do ano atual
   const contentRef = useRef(null);
 
   const toggleDropdown = () => {
@@ -73,7 +73,7 @@ const Washes2024 = () => {
 
       <div className="container mx-auto py-10">
         {/* Membros Permanentes */}
-        <h1 className="text-center text-[28px] lg:text-[32px] font-bold mb-8">Comitê Diretivo - Membros Permanentes</h1>
+        <h1 className="text-center text-[28px] lg:text-[32px] font-bold mb-8">Membros Permanentes</h1>
         <div className="flex flex-wrap justify-around gap-4 mb-10">
           {dadosMembros.map((member, index) => (
             <Card
@@ -90,8 +90,8 @@ const Washes2024 = () => {
 
         {/* Coordenação por Ano */}
         <h2 className="text-center text-[28px] lg:text-[32px] font-bold mb-8">
-        Comitê Diretivo - Coordenação {anoAtual}
-        </h2> 
+          Coordenação {anoAtual}
+        </h2>
         <div className="flex flex-wrap justify-center gap-20 mb-10">
           {coordenadoresDoAno.map((coordinator, index) => (
             <Card
@@ -153,4 +153,4 @@ const Washes2024 = () => {
   );
 };
 
-export default Washes2024;
+export default Washes2025;

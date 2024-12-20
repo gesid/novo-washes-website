@@ -15,7 +15,16 @@ function App() {
       <div className="pt-[56px]">
         <Routes>
           <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/quem-somos" element={<QuemSomos />} />
+          <Route path="/washes-2016" element={<Washes2024/>} />
+          <Route path="/washes-2017" element={<Washes2024/>} />
+          <Route path="/washes-2018" element={<Washes2024/>} />
+          <Route path="/washes-2019" element={<Washes2024/>} />
+          <Route path="/washes-2020" element={<Washes2024/>} />
+          <Route path="/washes-2021" element={<Washes2024/>} />
+          <Route path="/washes-2022" element={<Washes2024/>} />
+          <Route path="/washes-2023" element={<Washes2024/>} />
           <Route path="/washes-2024" element={<Washes2024/>} />
           <Route path="/washes-2025" element={<Washes2025/>} />
           <Route path="/edicoes-anteriores" element={<EdicoesAnteriores />} />
