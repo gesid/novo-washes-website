@@ -1,5 +1,142 @@
 export const dadosComitePrograma = {
-    2024 : {
+
+  2016 : {
+    "Norte": [ 
+      {name:"Em breve"}
+    ],
+    "Nordeste": [
+      {name:"Em breve"}
+    ],
+    "Centro-Oeste": [
+      {name:"Em breve"}
+    ],
+    "Sudeste": [
+      {name:"Em breve"}
+    ],
+    "Sul": [
+      {name:"Em breve"}
+    ]
+  },
+  2017 : {
+    "Norte": [ 
+      {name:"Em breve"}
+    ],
+    "Nordeste": [
+      {name:"Em breve"}
+    ],
+    "Centro-Oeste": [
+      {name:"Em breve"}
+    ],
+    "Sudeste": [
+      {name:"Em breve"}
+    ],
+    "Sul": [
+      {name:"Em breve"}
+    ]
+  },
+  2018: {
+    "Norte": [ 
+      {name:"Em breve"}
+    ],
+    "Nordeste": [
+      {name:"Em breve"}
+    ],
+    "Centro-Oeste": [
+      {name:"Em breve"}
+    ],
+    "Sudeste": [
+      {name:"Em breve"}
+    ],
+    "Sul": [
+      {name:"Em breve"}
+    ]
+  },
+  2019 : {
+    "Norte": [ 
+      {name:"Em breve"}
+    ],
+    "Nordeste": [
+      {name:"Em breve"}
+    ],
+    "Centro-Oeste": [
+      {name:"Em breve"}
+    ],
+    "Sudeste": [
+      {name:"Em breve"}
+    ],
+    "Sul": [
+      {name:"Em breve"}
+    ]
+  },
+  2020 : {
+    "Norte": [ 
+      {name:"Em breve"}
+    ],
+    "Nordeste": [
+      {name:"Em breve"}
+    ],
+    "Centro-Oeste": [
+      {name:"Em breve"}
+    ],
+    "Sudeste": [
+      {name:"Em breve"}
+    ],
+    "Sul": [
+      {name:"Em breve"}
+    ]
+  },
+  2021 : {
+    "Norte": [ 
+      {name:"Em breve"}
+    ],
+    "Nordeste": [
+      {name:"Em breve"}
+    ],
+    "Centro-Oeste": [
+      {name:"Em breve"}
+    ],
+    "Sudeste": [
+      {name:"Em breve"}
+    ],
+    "Sul": [
+      {name:"Em breve"}
+    ]
+  },
+  2022 : {
+    "Norte": [ 
+      {name:"Em breve"}
+    ],
+    "Nordeste": [
+      {name:"Em breve"}
+    ],
+    "Centro-Oeste": [
+      {name:"Em breve"}
+    ],
+    "Sudeste": [
+      {name:"Em breve"}
+    ],
+    "Sul": [
+      {name:"Em breve"}
+    ]
+  },
+  2023 : {
+    "Norte": [ 
+      {name:"Em breve"}
+    ],
+    "Nordeste": [
+      {name:"Em breve"}
+    ],
+    "Centro-Oeste": [
+      {name:"Em breve"}
+    ],
+    "Sudeste": [
+      {name:"Em breve"}
+    ],
+    "Sul": [
+      {name:"Em breve"}
+    ]
+  },
+  2024 : {
     "Norte": [
       { name: "Adriana Lopes Damian", university: "Universidade Federal do Amazonas" },
       { name: "Bruno Gadelha", university: "Universidade Federal do Amazonas" },
@@ -62,8 +199,23 @@ export const dadosComitePrograma = {
     "Sul": [
       {name:"Em breve"}
     ]
-
-
-  }
+  },
+  2026 : {
+    "Norte": [ 
+      {name:"Em breve"}
+    ],
+    "Nordeste": [
+      {name:"Em breve"}
+    ],
+    "Centro-Oeste": [
+      {name:"Em breve"}
+    ],
+    "Sudeste": [
+      {name:"Em breve"}
+    ],
+    "Sul": [
+      {name:"Em breve"}
+    ]
+  },
 }
   
