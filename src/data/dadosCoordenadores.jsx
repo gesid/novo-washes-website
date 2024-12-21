@@ -145,7 +145,7 @@ export const dadosCoordenadores = {
   ],
   2024: [
     {
-      imgSrc: "/assets/imgs/Allyson Allex.jpeg",
+      imgSrc: "/assets/imgs/Allyson Allex.jpg",
       name: "Allysson Allex Araújo",
       university: "Universidade Federal do Cariri",
       memberType: "Coordenador",
@@ -163,7 +163,7 @@ export const dadosCoordenadores = {
   ],
   2025: [
     {
-      imgSrc: "/assets/imgs/Allyson Allex.jpeg",
+      imgSrc: "/assets/imgs/Allyson Allex.jpg",
       name: "Allysson Allex Araújo",
       university: "Universidade Federal do Cariri",
       memberType: "Coordenador",

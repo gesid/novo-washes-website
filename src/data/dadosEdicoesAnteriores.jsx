@@ -71,6 +71,14 @@ export const dadosEdicoesAnteriores = [
     linkWebsite: "/washes-2024",
     linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/1323"
   },
+  { // Decima Edição WASHES
+    imagem: "/assets/edicoesAnterioresImages/washes-x-maceio.png",
+    edicao: "X WASHES",
+    local : "Maceió - Al",
+    anoDaEdicao: "(2025)",
+    linkWebsite: "/washes-2025",
+    linkAnalEvento: ""
+  },
   // Adicione edições futuras abaixo
   // { 
   //   imagem: "",
