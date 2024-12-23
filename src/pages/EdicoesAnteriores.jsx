@@ -8,6 +8,7 @@ const EdicoesAnteriores = () => {
         <CardEdicoesAnteriores
           key={index}
           imagem={dadosEventos.imagem}
+          creditosDaImagem={dadosEventos.creditosDaImagem}
           edicao={dadosEventos.edicao}
           local={dadosEventos.local}
           anoDaEdicao={dadosEventos.anoDaEdicao}
