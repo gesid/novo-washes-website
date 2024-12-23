@@ -315,19 +315,19 @@ export const dadosProgramacao = {
   ],
   2025: [
     {
-      data: "",
+      data: "Em Breve",
       horarioDeInicio: "",
-      apresentador: "",
+      apresentador: "Em Breve",
       sessao: "",
       programacao: [
         {
-          horarioApresentacao: "",
-          temaApresentacao: "",
+          horarioApresentacao: "Em Breve",
+          temaApresentacao: "Em Breve",
         },
-        {
-          horarioApresentacao: "",
-          temaApresentacao: "",
-        },
+        // {
+        //   horarioApresentacao: "",
+        //   temaApresentacao: "",
+        // },
       ],
     },
   ],

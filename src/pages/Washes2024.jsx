@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import Card from "../components/Card";
 import { SlArrowDown } from "react-icons/sl";
-import { BannerWASHES2024 } from "../components/bannerWASHES2024";
+import { BannerWASHES } from "../components/BannerWASHES";
 import { TopicoDeInteresse } from "../components/topicoDeInteresse";
 import { ChamadaDeTrabalhos } from "../components/ChamadaDeTrabalhos";
 import { Programacao } from "../components/Programacao";
@@ -35,8 +35,9 @@ const Washes2024 = () => {
 
   return (
     <section>
-      <BannerWASHES2024 
+      <BannerWASHES 
         anoAtual={anoAtual}
+        creditosDaImagem="Foto de Lucas Meneses no Pexels"
       />
 
       <div className="container px-5 mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 my-20">

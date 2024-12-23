@@ -37,6 +37,7 @@ const Washes2025 = () => {
     <section>
       <BannerWASHES2024 
         anoAtual={anoAtual}
+        creditosDaImagem=""
       />
 
       <div className="container px-5 mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 my-20">
