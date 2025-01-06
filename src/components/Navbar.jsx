@@ -40,9 +40,9 @@ function Navbar() {
   );
 
   const navItems = [
-    { name: "HOME", path: "/" },
+    { name: "HOME", path: "/home" },
     { name: "QUEM SOMOS", path: "/quem-somos" },
-    { name: "WASHES 2025", path: "/washes-2025" },
+    { name: "WASHES 2026", path: "/washes-2026" },
     { name: "EDIÇÕES ANTERIORES", path: "/edicoes-anteriores" },
     {
       name: "DATAWASHES",
@@ -55,7 +55,7 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
-          <Link to="/" className="flex items-center">
+          <Link to="/home" className="flex items-center" onClick={() => setSelected("/home")}>
             <img
               src="/assets/imgs/logo_washes.svg"
               alt="Logo"

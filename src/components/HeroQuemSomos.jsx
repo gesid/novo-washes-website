@@ -13,7 +13,7 @@ function HeroQuemSomos() {
                         <Link
                             to="/quem-somos" 
                             className="px-4 py-2 flex justify-center bg-[#36BCEE] hover:bg-white
-                            text-base text-white hover:text-[#36BCEE] hover:outline hover:outline-2 cursor-pointer
+                            text-base text-white hover:text-[#36BCEE] hover:outline hover:outline-1 cursor-pointer
                             rounded transition-colors duration-300 lg:px-5 lg:py-3 lg:text-2xl"
                         >
                             Saiba mais!

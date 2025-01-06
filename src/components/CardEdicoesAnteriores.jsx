@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 export const CardEdicoesAnteriores = ({imagem, local, edicao, anoDaEdicao,linkWebsite,linkAnalEvento, creditosDaImagem }) =>{
   return(
       <section className="transition lg:hover:-translate-y-1.5 lg:hover:shadow-2xl text-center mx-2 my-7 pb-2 shadow-md rounded-xl flex flex-col gap-5">
-        <div className="w-[350px] relative bg-white">
-          <img src={imagem} alt={local} className="rounded-t-xl max-h-[170px] w-full"/>
+        <div className=" relative bg-white">
+          <img src={imagem} alt={local} className="rounded-t-xl max-h-[170px] w-[350px]"/>
           <p className="absolute left-0 text-gray-500 text-[10px] pl-1">{creditosDaImagem}</p>
         </div>
 

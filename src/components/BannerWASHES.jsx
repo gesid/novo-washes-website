@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export function BannerWASHES({anoAtual, creditosDaImagem}){
 
   const backgroundBannerWASHES = {
-    2026: 'md:bg-banner-hero-WASHES2026',
+    // 2026: 'md:bg-banner-hero-WASHES2026',
     2025: 'md:bg-banner-hero-WASHES2025',
     2024: 'md:bg-banner-hero-WASHES2024',
     2023: 'md:bg-banner-hero-WASHES2023',
@@ -14,7 +14,6 @@ export function BannerWASHES({anoAtual, creditosDaImagem}){
     2018: 'md:bg-banner-hero-WASHES2018',
     2017: 'md:bg-banner-hero-WASHES2017',
     2016: 'md:bg-banner-hero-WASHES2016',
-    default: 'md:bg-banner-hero-default',
 };
 
   const bg = backgroundBannerWASHES[anoAtual] || backgroundBannerWASHES.default;

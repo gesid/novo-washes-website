@@ -1,19 +1,19 @@
 import { useState, useRef, useEffect } from "react";
-import Card from "../components/Card";
+import Card from "../../components/Card";
 import { SlArrowDown } from "react-icons/sl";
-import { BannerWASHES } from "../components/BannerWASHES";
-import { TopicoDeInteresse } from "../components/topicoDeInteresse";
-import { ChamadaDeTrabalhos } from "../components/ChamadaDeTrabalhos";
-import { Programacao } from "../components/Programacao";
-import { dadosChamadaDeTrabalho } from "../data/dadosChamadaDeTrabalhos";
-import { dadosProgramacao } from "../data/dadosProgramacao";
-import { dadosMembros } from "../data/dadosMembros";
-import { dadosCoordenadores } from "../data/dadosCoordenadores";
-import { dadosComitePrograma } from "../data/dadosComitePrograma";
+import { BannerWASHES } from "../../components/BannerWASHES";
+import { TopicoDeInteresse } from "../../components/topicoDeInteresse";
+import { ChamadaDeTrabalhos } from "../../components/ChamadaDeTrabalhos";
+import { Programacao } from "../../components/Programacao";
+import { dadosChamadaDeTrabalho } from "../../data/dadosChamadaDeTrabalhos";
+import { dadosProgramacao } from "../../data/dadosProgramacao";
+import { dadosMembros } from "../../data/dadosMembros";
+import { dadosCoordenadores } from "../../data/dadosCoordenadores";
+import { dadosComitePrograma } from "../../data/dadosComitePrograma";
 
-const Washes2025 = () => {
+const Washes2026 = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Controle do dropdown
-  const [anoAtual] = useState(2025); // Controle do ano atual
+  const [anoAtual] = useState(2026); // Controle do ano atual
   const contentRef = useRef(null);
 
   const toggleDropdown = () => {
@@ -35,9 +35,9 @@ const Washes2025 = () => {
 
   return (
     <section>
-      <BannerWASHES 
+      <BannerWASHES
         anoAtual={anoAtual}
-        creditosDaImagem="Foto de Filipe Coelho no Pexels"
+        creditosDaImagem=""
       />
 
       <div className="container px-5 mx-auto text-[#2f2f2f] flex flex-col lg:gap-5 gap-2 my-20">
@@ -74,7 +74,7 @@ const Washes2025 = () => {
 
       <div className="container mx-auto py-10">
         {/* Membros Permanentes */}
-        <h1 className="text-center text-[28px] lg:text-[32px] font-bold mb-8">Comitê Diretivo - Membros Permanentes</h1>
+        <h1 className="text-center text-[28px] lg:text-[32px] font-bold mb-8">Membros Permanentes</h1>
         <div className="flex flex-wrap justify-around gap-4 mb-10">
           {dadosMembros.map((member, index) => (
             <Card
@@ -91,7 +91,7 @@ const Washes2025 = () => {
 
         {/* Coordenação por Ano */}
         <h2 className="text-center text-[28px] lg:text-[32px] font-bold mb-8">
-        Comitê Diretivo - Coordenação {anoAtual}
+          Coordenação {anoAtual}
         </h2>
         <div className="flex flex-wrap justify-center gap-20 mb-10">
           {coordenadoresDoAno.map((coordinator, index) => (
@@ -154,4 +154,4 @@ const Washes2025 = () => {
   );
 };
 
-export default Washes2025;
+export default Washes2026;

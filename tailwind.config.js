@@ -24,7 +24,6 @@ export default {
         "banner-hero-WASHES2018":"url(assets/banners/banner-hero-WASHES2018.jpg)",
         "banner-hero-WASHES2017":"url(assets/banners/banner-hero-WASHES2017.jpg)",
         "banner-hero-WASHES2016":"url(assets/banners/banner-hero-WASHES2016.jpg)",
-        "banner-hero-default":"url(assets/banners/banner-hero-WASHESDefault)",
         
         "feed-insta-1": "url(/assets/feedInstaImages/img001.png)",
         "feed-insta-2": "url(/assets/feedInstaImages/img002.png)",
