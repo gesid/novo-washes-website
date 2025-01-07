@@ -64,11 +64,11 @@ export const dadosEdicoesAnteriores = [
   },
   { // Oitava Edição WASHES
     imagem: "/assets/edicoesAnterioresImages/washes-viii-joaoPessoa.jpg",
-    creditosDaImagem:"Foto de Caroline Cagnin no Pexels",
+    creditosDaImagem:"Foto de Roberto Rodrigues no Pexels",
     edicao: "VIII WASHES",
     local : "João Pessoa - PB",
     anoDaEdicao: "(2023)",
-    linkWebsite: "/washes-2024",
+    linkWebsite: "/washes-2023",
     linkAnalEvento: "https://sol.sbc.org.br/index.php/washes/issue/view/1116"
   },
   { // Nona Edição WASHES
