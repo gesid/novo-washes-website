@@ -119,23 +119,50 @@ export const dadosComitePrograma = {
       {name:"Em breve"}
     ]
   },
-  2023 : {
-    "Norte": [ 
-      {name:"Em breve"}
+  2023: {
+    "Norte": [
+      { "name": "Adriana Lopes Damian", "university": "Universidade Federal do Amazonas" },
+      { "name": "Ana Oran", "university": "Universidade Federal do Amazonas" }
     ],
     "Nordeste": [
-      {name:"Em breve"}
+      { "name": "Adriano Albuquerque", "university": "Universidade de Fortaleza (UNIFOR)" },
+      { "name": "Allysson Allex Araújo", "university": "Universidade Federal do Ceará" },
+      { "name": "Carla Bezerra", "university": "Universidade Federal do Ceará (UFC)" },
+      { "name": "Francisco Victor da Silva Pinheiro", "university": "Universidade Federal do Ceará (UFC)" },
+      { "name": "Ivan Machado", "university": "Universidade Federal da Bahia" },
+      { "name": "José Jorge L. Dias Jr.", "university": "Universidade Federal da Paraíba" },
+      { "name": "Leonardo Moreira", "university": "Universidade Federal do Ceará" },
+      { "name": "Marília Mendes", "university": "Universidade Federal do Ceará (UFC)" },
+      { "name": "Windson Viana", "university": "Universidade Federal do Ceará (UFC)" }
     ],
     "Centro-Oeste": [
-      {name:"Em breve"}
+      { "name": "Hudson Borges", "university": "Universidade Federal de Mato Grosso do Sul (UFMS)" },
+      { "name": "Maria Istela Cagnin", "university": "Universidade Federal de Mato Grosso do Sul (UFMS)" },
+      { "name": "Sergio Carvalho", "university": "Universidade Federal de Goiás (UFG)" },
+      { "name": "Valdemar Vicente Graciano Neto", "university": "Universidade Federal de Goiás (UFG)" }
     ],
     "Sudeste": [
-      {name:"Em breve"}
+      { "name": "Carlos Eduardo de Barros Paes", "university": "Pontifícia Universidade Católica de São Paulo" },
+      { "name": "César França", "university": "UFRPE / Cesar School" },
+      { "name": "Everton Gomede", "university": "Universidade Estadual de Campinas" },
+      { "name": "Gláucia Braga e Silva", "university": "Universidade Federal de Viçosa" },
+      { "name": "Gleison Santos", "university": "Unirio" },
+      { "name": "Heitor Costa", "university": "Universidade Federal de Lavras" },
+      { "name": "José Maria David", "university": "Universidade Federal de Juiz de Fora" },
+      { "name": "Livia Degrossi", "university": "Fundação Getulio Vargas" },
+      { "name": "Paulo Meirelles", "university": "Universidade de São Paulo" },
+      { "name": "Regina Braga", "university": "Universidade Federal de Juiz de Fora" },
+      { "name": "Sandro Luis Freire de Castro Silva", "university": "Instituto Nacional de Câncer José de Alencar Gomes da Silva" },
+      { "name": "Sofia Paiva", "university": "Universidade Federal de São João del-Rei (UFSJ)" }
     ],
     "Sul": [
-      {name:"Em breve"}
+      { "name": "Alexandre Zanatta", "university": "Universidade de Passo Fundo" },
+      { "name": "Natasha Valentim", "university": "Universidade Federal do Paraná" },
+      { "name": "Thelma Colanzi", "university": "Universidade Estadual de Maringá" },
+      { "name": "Walter Nakamura", "university": "Universidade Tecnológica Federal do Paraná" },
+      { "name": "Williamson Silva", "university": "Universidade Federal do Pampa (Campus Alegrete)" }
     ]
-  },
+  }, 
   2024 : {
     "Norte": [
       { name: "Adriana Lopes Damian", university: "Universidade Federal do Amazonas" },

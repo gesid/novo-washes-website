@@ -1,7 +1,31 @@
 export const dadosTopicoDeInteresse = {
   // Cada item do array corresponde a um tópico.
   // Exclua ou adicione mais tópicos abaixo.
-  2024: [
+
+2023:[
+  "Novas abordagens, métodos, práticas e modelos considerando os aspectos humanos, sociais e/ou econômicos aplicados ao desenvolvimento de software para o empoderamento digital",
+  "Relatos sobre o empoderamento digital em equipes de software durante situações adversas, como a pandemia da Covid-19",
+  "Impacto da inteligência artificial nos aspectos humanos, sociais e/ou econômicos do desenvolvimento de software",
+  "Inteligência artificial responsável em face dos aspectos humanos, sociais e/ou econômicos do desenvolvimento de software",
+  "Bots, chatbots, agentes conversacionais, redes sociais e mídias sociais em ambiente de desenvolvimento de software",
+  "Princípios de desenvolvimento e projeto de software, práticas de engenharia de ferramentas que influenciam ou são influenciados por aspectos sociais, humanos e/ou econômicos",
+  "Aspectos humanos e econômicos e sua influência na qualidade de software",
+  "Aspectos gerenciais e organizacionais do desenvolvimento de software",
+  "Ferramentas e processos de apoio a situações organizacionais e culturais",
+  "Projeto, desenvolvimento e avaliação de ferramentas ou bases de dados (datasets) que apoiam o estudo de emoções e criação de valor em engenharia de software",
+  "Características psicológicas, sociológicas, humanas e econômicas do desenvolvimento de software",
+  "Abordagens que explorem perspectivas humanas, sociais e econômicas em torno do software envolvendo Mineração de Repositórios de Software ou Aprendizagem de Máquina (inclusive aprendizagem profunda - deep learning)",
+  "Modelos de desenvolvimento de software baseados em comunidade, como open source, crowdsourcing e parcerias público-privadas",
+  "Modelos de negócios, plataformas e ecossistemas de software",
+  "Questões relativas a licenças, propriedade intelectual e patentes",
+  "Educação sobre os aspectos sociais, humanos e econômicos na engenharia de software",
+  "Estudos de caso, estudos experimentais ou relatos de experiência da indústria",
+  "Aspectos sociais, humanos e econômicos de tópicos emergentes em Engenharia de Software (ecossistemas de software, sistemas intensivos de software, sistemas de sistemas, blockchain, internet das coisas etc.)",
+  "Revisões sistemáticas ou mapeamentos sistemáticos",
+  "Oportunidades e desafios da integração entre mundos físico e digital e suas interações sociais",
+],
+
+2024: [
   "Novas abordagens, métodos, práticas e modelos considerando os aspectos humanos, sociais e/ou econômicos aplicados ao desenvolvimento de software e sistemas ciber-físicos;",
   "Relatos sobre o empoderamento digital em equipes de software no formato de trabalho híbridas ou remoto;",
   "Impacto da inteligência artificial (trustworthy AI, ética, Large Language Models, etc.) nos aspectos humanos, sociais e/ou econômicos do desenvolvimento de software e sistemas;",

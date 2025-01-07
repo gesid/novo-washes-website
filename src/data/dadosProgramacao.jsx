@@ -127,21 +127,121 @@ export const dadosProgramacao = {
   ],
   2023: [
     {
-      data: "",
-      horarioDeInicio: "",
-      apresentador: "",
-      sessao: "",
-      programacao: [
+      "data": "(07/08)",
+      "horarioDeInicio": "9:00 AM",
+      "apresentador": "",
+      "sessao": "Sessão Técnica 1 - Tópicos Emergentes",
+      "programacao": [
         {
-          horarioApresentacao: "",
-          temaApresentacao: "",
+          "horarioApresentacao": "9:00 - 9:10",
+          "temaApresentacao": "Abertura - Introdução ao WASHES"
         },
         {
-          horarioApresentacao: "",
-          temaApresentacao: "",
+          horarioApresentacao: "9:10 - 9:30",
+          temaApresentacao: `Is computer field mature enough to be used as a tool in psychology? </br> 
+            Daniel Yuji Hosomi (Universidade de Campinas – Unicamp – Brazil), Larissa Mota (Pontifícia Universidade Católica de Campinas – Brazil), Solange Wechsler (PUC-Campinas – Brazil), Helio Azevedo (Centro de Tecnologia da Informação Renato Archer – Brazil)
+            `,
+        },
+        {
+          horarioApresentacao: "9:30 - 9:50",
+          temaApresentacao: `Ethics in the Software Development Process: a Tertiary Literature Review </br> 
+            Otávio Santos Gomes (Universidade Federal de Viçosa – Brazil), Gláucia Braga e Silva (Universidade Federal de Viçosa – Brazil), Érica Souza (Universidade Tecnológica Federal do Paraná (UTFPR) – Brazil)
+            `,
+        },
+        {
+          horarioApresentacao: "9:50 - 10:10",
+          temaApresentacao: `O uso de chatbots humanizados na saúde: melhorando o atendimento ao cliente </br> 
+            Maria de Araújo (Instituto Federal de Educação, Ciência e Tecnologia do Ceará – Brazil), Amanda do Nascimento (Instituto Federal de Educação, Ciência e Tecnologia do Ceará – Brazil), Jose Silva (Instituto Federal de Educação, Ciência e Tecnologia do Ceará – Brazil), Jamires Costa (UFC – Universidade Federal do Ceará – Brazil)
+            `,
+        },
+        {
+          horarioApresentacao: "10:10 - 11:00",
+          temaApresentacao: `Brainwriting na elicitação de requisitos para IA confiável </br> 
+            Francisco Luciano Quirino da Silva (Univerdidade Federal do Ceará – Brazil), Andréia Libório (UFC – Brazil), Carla Bezerra (Universidade Federal do Ceará – UFC – Brazil), Ingrid Monteiro (Universidade Federal do Ceará – Brazil)
+            `,
+        },
+      ]
+    },
+    {
+      data: "(07/08)",
+      horarioDeInicio: "11:00 AM",
+      apresentador: "",
+      sessao: "Sessão Técnica 2 - Avaliação de tecnologias de software e Integração entre academia e indústria",
+      programacao: [
+        {
+          horarioApresentacao: "11:00 - 11:20",
+          temaApresentacao: `Percepção docente sobre o uso do WhatsApp como ferramenta de comunicação no ensino remoto emergencial </br> 
+              Ivanilse Calderon (Universidade Federal do Amazonas – Brazil), Pedro Henrique Dias Valle (Universidade Federal de Juiz de Fora – Brazil), Ana Oran (Universidade Federal do Amazonas – Brazil), Ricardo Vilela (Universidade Federal do Cariri – UFCA – Brazil), Rayfran Lima (Cesar School, Recife, PE, Brasil), Renato Garcia (UNIPAMPA, Alegrete, RS, Brasil), Williamson Silva (Universidade Federal do Pampa (Campus Alegrete) – Brazil), Eduardo Feitosa (Universidade Federal do Amazonas – Brazil)
+            `,
+        },
+        {
+          horarioApresentacao: "11:20 - 11:40",
+          temaApresentacao: `Acessibilidade para Pessoas Cegas: Avaliação de Compatibilidade do TalkBack com a ABNT NBR 17060 </br>
+              Clemer dos S. Silva (Instituto Federal Baiano – Brazil), Lucas Oliveira (Instituto Federal Baiano – Brazil), Matheus Silva (Instituto Federal Baiano – Brazil), Tiago Nogueira (Instituto Federal Baiano – Brazil)
+            `,
+        },{
+          horarioApresentacao: "11:40 - 12:00",
+          temaApresentacao: `Avaliação de aplicativos de apoio a comunicação das pessoas surdas na perspectiva de um surdo </br>
+              Bruno Costa (Universidade Federal do Acre Rio Branco – AC – Brasil), Amarildo de Lima Melo (Universidade Federal do Acre Rio Branco – AC – Brasil), Tamila Nascimento (Universidade Federal do Acre Rio Branco – AC – Brasil), Sonia Maria França (Universidade Federal do Acre Rio Branco – AC – Brasil), Catarina Costa (Universidade Federal do Acre Rio Branco – AC – Brasil)
+            `,
+        },
+        {
+          horarioApresentacao: "12:00 - 12:20",
+          temaApresentacao: `Mercado de trabalho em Tecnologia da Comunicação e Informação (TI): análise de um experimento de aproximação entre academia e indústria no Porto Digital </br>
+              Marcela Valença (Cesar School), Wellynton Diniz (Cesar School), Mariana Pincovsky (Cesar School), César França (Universidade Federal Rural de Pernambuco – UFRPE), Giordano Cabral (Universidade Federal de Pernambuco – UFPE)
+          `,
         },
       ],
     },
+      {
+        data: "(07/08)",
+        horarioDeInicio: "14:00 PM",
+        apresentador: "",
+        sessao: " Palestra",
+        programacao: [
+          {
+            horarioApresentacao: "14:00 - 15:00",
+            temaApresentacao: `Palestra “Construindo Softwares em Conformidade: LGPD, Marco Legal da Inteligência Artificial e os Desafios na Engenharia de Software sob aspectos humanos, sociais e econômicos”.  Palestrante convidada: Juliana Saraiva (UFPB) </br> </br> 
+            <strong> Resumo da palestra: </strong> </br> 
+            A Lei Geral de Proteção de Dados (LGPD) vem impactando a Engenharia de Software em todas as suas áreas, de atuação uma vez que ela impõe que a proteção e privacidade de dados pessoais sejam pensados desde a fase de concepção do produto e durante toda a vida do software. Adicionalmente, o Marco Legal da Inteligência Artificial, ainda em tramitação no Congresso Nacional através do Projeto 2338/2023, prevê importante diretrizes aos softwares que adotam algoritmos de inteligência artificial. Ademais, a LGPD determina que o Titular de Dados tem o Direito à revisão de decisões de software realizadas exclusivamente por inteligência artificial. Neste contexto, a palestra abordará como essas duas imposições legais podem impactar o processo de desenvolvimento de software, sob a ótica de fatores humanos, sociais e econômicos.
+            ` ,
+          },
+        ],
+      },
+      {
+        data: "(07/08)",
+        horarioDeInicio: " 15:10 PM",
+        apresentador: "",
+        sessao: "Sessão Técnica 3 - Fatores humanos e sociais no desenvolvimento de software",
+        programacao: [
+        {
+          horarioApresentacao: "15:10 - 15:30",
+          temaApresentacao: `Mapeamento Sistemático Sobre Vieses Cognitivos no Desenvolvimento de Software </br>
+              Bárbara Beato Ribeiro (Universidade Federal do Estado do Rio de Janeiro (UNIRIO) – Brazil), Josue Resende (Universidade Federal do Estado do Rio de Janeiro (UNIRIO) – Brazil), Thiago Ribeiro (UNIRIO – Brazil), Rodrigo Santos (UNIRIO – Brazil), Sean Siqueira (Universidade Federal do Estado do Rio de Janeiro (UNIRIO) – Brazil)
+            `,
+        },{
+          horarioApresentacao: "15:30 - 15:50",
+          temaApresentacao: `The impact of UX work on communication and collaboration in software startups </br>
+              Jullia Saad (UFSCar – Brazil), Joelma Choma (UFSCar Sorocaba – Brazil), Alexandre Alvaro (Federal University of São Carlos (UFSCar) – Sorocaba – Brazil), Luciana Zaina (UFSCar – Brazil)
+            `,
+        },{
+          horarioApresentacao: "15:50 - 16:10",
+          temaApresentacao: `Impact of Remote Work on Software Teams: A Qualitative Study </br>
+              André Luís Menolli (Universidade Estadual do Norte do Paraná – UENP – Brazil), Thiago Coleti (Universidade Estadual do Norte Paraná – Brazil), Marcelo Morandini (Universidade de São Paulo – Brazil)
+            `,
+        },{
+          horarioApresentacao: "16:10 - 16:30",
+          temaApresentacao: `Investigando a Percepção de Feedback em Times de Desenvolvimento de Software: Um Estudo Inicial </br>
+              Adriano de Souza (Universidade Federal do Rio de Janeiro – Brazil), Fernanda Santos (UFRJ – Brazil), Lidvaldo Santos (University of Rio de Janeiro – Brazil), Patrick Belem (Universidade Federal do Rio de janeiro – UFRJ – Brazil), Sírius Thadeu Ferreira da Silva (Universidade Federal do Rio de Janeiro – UFRJ – Brazil), Adriana Vivacqua (Universidade Federal do Rio de Janeiro (UFRJ) – Brazil), Rafael de Mello (UFRJ – Brazil)
+            `,
+        },
+        {
+          horarioApresentacao: "16:30 - 17:00",
+          temaApresentacao: " Reunião da Comunidade e Premiação ",
+        },
+        ],
+      },
+    
   ],
   2024: [
     {
