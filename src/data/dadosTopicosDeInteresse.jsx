@@ -214,5 +214,8 @@ export const dadosTopicoDeInteresse = {
   "Estudos secundários, estudos de caso, surveys, estudos experimentais ou relatos de experiência da indústria",
   "Aspectos sociais, humanos e econômicos em sistemas intensivos de software, sistemas de sistemas, blockchain, internet das coisas, sistemas ciber-físicos etc.",
   "Aspectos sociais, humanos e econômicos de software no contexto de governança digital para uma sociedade sustentável"
-]
+],
+2026:[
+  "Mais informações em breve."
+],
 };

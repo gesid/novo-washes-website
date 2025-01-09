@@ -19,7 +19,7 @@ export function ChamadaDeTrabalhos({titulo, conteudo}) {
 
   return(
     <section>
-      <div className={`w-full px-4 py-3 flex flex-row items-center justify-between shadow-md
+      <div className={`w-full px-4 py-3 flex flex-row items-center justify-between shadow-md cursor-pointer
         ${isOpen ? "rounded-t-[10px]" : "rounded-[10px]" }`} 
         onClick={openDropDown}>
         <h2 className="lg:text-2xl text-lg font-semibold">{titulo}</h2>

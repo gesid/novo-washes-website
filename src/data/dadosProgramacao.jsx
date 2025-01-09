@@ -790,8 +790,8 @@ export const dadosProgramacao = {
   ],
   2023: [
     {
-      data: "(07/08)",
-      horarioDeInicio: "9:00 AM",
+      data: "07/08/2023",
+      horarioDeInicio: "9:00",
       apresentador: "",
       sessao: "Sessão Técnica 1 - Tópicos Emergentes",
       programacao: [
@@ -826,8 +826,8 @@ export const dadosProgramacao = {
       ]
     },
     {
-      data: "(07/08)",
-      horarioDeInicio: "11:00 AM",
+      data: "07/08/2023",
+      horarioDeInicio: "11:00",
       apresentador: "",
       sessao: "Sessão Técnica 2 - Avaliação de tecnologias de software e Integração entre academia e indústria",
       programacao: [
@@ -857,8 +857,8 @@ export const dadosProgramacao = {
       ],
     },
       {
-        data: "(07/08)",
-        horarioDeInicio: "14:00 PM",
+        data: "07/08/2023",
+        horarioDeInicio: "14:00",
         apresentador: "",
         sessao: " Palestra",
         programacao: [
@@ -872,8 +872,8 @@ export const dadosProgramacao = {
         ],
       },
       {
-        data: "(07/08)",
-        horarioDeInicio: " 15:10 PM",
+        data: "07/08/2023",
+        horarioDeInicio: " 15:10",
         apresentador: "",
         sessao: "Sessão Técnica 3 - Fatores humanos e sociais no desenvolvimento de software",
         programacao: [
@@ -908,8 +908,8 @@ export const dadosProgramacao = {
   ],
   2024: [
     {
-      data: "(23/07)",
-      horarioDeInicio: "8:30 AM",
+      data: "23/07/2024",
+      horarioDeInicio: "8:30",
       apresentador: "Chair: Williamson Silva (UNIPAMPA) ",
       sessao: "ST-1: Sessão Técnica 1",
       programacao: [
@@ -940,8 +940,8 @@ export const dadosProgramacao = {
       ],
     },
     {
-      data: "(23/07)",
-      horarioDeInicio: "9:45 AM",
+      data: "23/07/2024",
+      horarioDeInicio: "9:45",
       apresentador: "Chair: Emanuel Coutinho (UFC)",
       sessao: "ST-2: Sessão Técnica 2",
       programacao: [
@@ -963,8 +963,8 @@ export const dadosProgramacao = {
       ],
     },
     {
-      data: "(23/07)",
-      horarioDeInicio: "11:00 AM",
+      data: "23/07/2024",
+      horarioDeInicio: "11:00",
       apresentador: "Chair: Pedro Henrique Dias Valle (UFJF)",
       sessao: "ST-3: Sessão Técnica 3",
       programacao: [
@@ -991,8 +991,8 @@ export const dadosProgramacao = {
       ],
     },
     {
-      data: "(23/07)",
-      horarioDeInicio: "12:00 PM",
+      data: "23/07/2024",
+      horarioDeInicio: "12:00",
       apresentador: "Chair: Juliana Saraiva (UFPB)",
       sessao: "ST-4: Sessão Técnica 4",
       programacao: [
@@ -1019,8 +1019,8 @@ export const dadosProgramacao = {
       ],
     },
     {
-      data: "(23/07)",
-      horarioDeInicio: "16:30 PM",
+      data: "23/07/2024",
+      horarioDeInicio: "16:30",
       apresentador: "Chair: Chair: Rodrigo Santos (UNIRIO)",
       sessao: "Painel BraSNAM-WASHES",
       programacao: [
@@ -1032,8 +1032,8 @@ export const dadosProgramacao = {
       ],
     },
     {
-      data: "(23/07)",
-      horarioDeInicio: "17:30 PM",
+      data: "23/07/2024",
+      horarioDeInicio: "17:30",
       apresentador: "",
       sessao:
         "Fórum dos Grandes Desafios de Pesquisa em Aspectos Sociais, Humanos e Econômicos de Software (I GranDASHES-BR)",
@@ -1096,18 +1096,14 @@ export const dadosProgramacao = {
   ],
   2026: [
     {
-      data: "",
+      data: "Em breve",
       horarioDeInicio: "",
-      apresentador: "",
+      apresentador: "Em breve",
       sessao: "",
       programacao: [
         {
-          horarioApresentacao: "",
-          temaApresentacao: "",
-        },
-        {
-          horarioApresentacao: "",
-          temaApresentacao: "",
+          horarioApresentacao: "Em breve",
+          temaApresentacao: "Em breve",
         },
       ],
     },
