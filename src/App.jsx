@@ -1,10 +1,11 @@
-import { Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import QuemSomos from './pages/QuemSomos';
 import EdicoesAnteriores from './pages/EdicoesAnteriores';
 import DataWashes from './pages/DataWashes';
+import ScrollToTop from './components/ScrollTop';
 import {
   Washes2016,
   Washes2017,
@@ -23,10 +24,11 @@ function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <div className="pt-14">
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/quem-somos" element={<QuemSomos />} />
           <Route path="/washes-2016" element={<Washes2016/>} />
           <Route path="/washes-2017" element={<Washes2017/>} />
