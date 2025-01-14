@@ -92,6 +92,7 @@ export const dadosEdicoesAnteriores = [
   // Adicione edições futuras abaixo
   // { 
   //   imagem: "",
+  //   creditosDaImagem:"",
   //   edicao: "",
   //   local : "",
   //   anoDaEdicao: "",

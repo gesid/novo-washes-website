@@ -4,10 +4,6 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  safelist: [
-    'bg-banner-hero-WASHES2024',
-    'bg-banner-hero-WASHES2025',
-  ],
   theme: {
     extend: {
       backgroundImage: {
