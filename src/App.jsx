@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -26,6 +26,7 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <div className="pt-14">
+      <BrowserRouter basename="/">        
         <Routes>
           <Route index element={<Home />} />
           <Route path="/" element={<Home />} />
@@ -45,6 +46,7 @@ function App() {
           <Route path="/datawashes" element={<DataWashes />} />
           {/* <Route path="*" element={<NoMatch />} /> */}
         </Routes>
+      </BrowserRouter>
       </div>
       <Footer />
     </>
