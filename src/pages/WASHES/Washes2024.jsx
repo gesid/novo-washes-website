@@ -7,7 +7,7 @@ import { ChamadaDeTrabalhos } from "../../components/ChamadaDeTrabalhos";
 import { Programacao } from "../../components/Programacao";
 import { dadosChamadaDeTrabalho } from "../../data/dadosChamadaDeTrabalhos";
 import { dadosProgramacao } from "../../data/dadosProgramacao";
-import { dadosMembros } from "../../data/dadosMembros";
+import { dadosComiteDiretivo } from "../../data/dadosComiteDiretivo";
 import { dadosCoordenadores } from "../../data/dadosCoordenadores";
 import { dadosComitePrograma } from "../../data/dadosComitePrograma";
 
@@ -30,12 +30,13 @@ const Washes2024 = () => {
 
   const programacaoDoAno = dadosProgramacao[anoAtual] || []; // Filtra a programação do ano atual
   const coordenadoresDoAno = dadosCoordenadores[anoAtual] || []; // Filtra os coordenadores do ano atual
+  const comiteDiretivo = dadosComiteDiretivo[anoAtual] || []; // Filtra os membros do comitê diretivo do ano atual
   const chamadaDeTrabalhosDoAno = dadosChamadaDeTrabalho[anoAtual] || []; // Filtra as chamadas de trabalho do ano atual
   const comiteProgramaDoAno = dadosComitePrograma[anoAtual] || []; // Filtra os membros do comitê de programa do ano atual
 
   return (
     <section>
-      <BannerWASHES 
+      <BannerWASHES
         anoAtual={anoAtual}
         creditosDaImagem="Foto de Lucas Meneses no Pexels"
       />
@@ -76,7 +77,7 @@ const Washes2024 = () => {
         {/* Membros Permanentes */}
         <h1 className="text-center text-[28px] lg:text-[32px] font-bold mb-8">Comitê Diretivo - Membros Permanentes</h1>
         <div className="flex flex-wrap justify-around gap-4 mb-10">
-          {dadosMembros.map((member, index) => (
+          {comiteDiretivo.map((member, index) => (
             <Card
               key={index}
               imgSrc={member.imgSrc}
@@ -92,7 +93,7 @@ const Washes2024 = () => {
         {/* Coordenação por Ano */}
         <h2 className="text-center text-[28px] lg:text-[32px] font-bold mb-8">
         Comitê Diretivo - Coordenação {anoAtual}
-        </h2> 
+        </h2>
         <div className="flex flex-wrap justify-center gap-20 mb-10">
           {coordenadoresDoAno.map((coordinator, index) => (
             <Card

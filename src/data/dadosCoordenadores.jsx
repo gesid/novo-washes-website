@@ -177,6 +177,14 @@ export const dadosCoordenadores = {
       linkedinUrl: "https://www.linkedin.com/in/anna-beatriz-marques/",
       lattesUrl: "http://lattes.cnpq.br/5522150204610320",
     },
+    {
+      imgSrc: "/assets/imgs/Emanuel Coutinho.png",
+      name: "Emanuel Coutinho",
+      university: "Universidade Federal do Ceará",
+      memberType: "Coordenador",
+      linkedinUrl: "https://www.linkedin.com/in/emanuel-coutinho-5991346",
+      lattesUrl: "http://lattes.cnpq.br/9359546788802277",
+    },
   ],
   2025: [
     {

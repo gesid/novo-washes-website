@@ -7,12 +7,11 @@ import { ChamadaDeTrabalhos } from "../../components/ChamadaDeTrabalhos";
 import { Programacao } from "../../components/Programacao";
 import { dadosChamadaDeTrabalho } from "../../data/dadosChamadaDeTrabalhos";
 import { dadosProgramacao } from "../../data/dadosProgramacao";
-import { dadosMembros } from "../../data/dadosMembros";
+import { dadosComiteDiretivo } from "../../data/dadosComiteDiretivo";
 import { dadosCoordenadores } from "../../data/dadosCoordenadores";
 import { dadosComitePrograma } from "../../data/dadosComitePrograma";
 
 const Washes2018 = () => {
-
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Controle do dropdown
   const [anoAtual] = useState(2018); // Controle do ano atual
   const contentRef = useRef(null);
@@ -31,6 +30,7 @@ const Washes2018 = () => {
 
   const programacaoDoAno = dadosProgramacao[anoAtual] || []; // Filtra a programação do ano atual
   const coordenadoresDoAno = dadosCoordenadores[anoAtual] || []; // Filtra os coordenadores do ano atual
+  const comiteDiretivo = dadosComiteDiretivo[anoAtual] || []; // Filtra os membros do comitê diretivo do ano atual
   const chamadaDeTrabalhosDoAno = dadosChamadaDeTrabalho[anoAtual] || []; // Filtra as chamadas de trabalho do ano atual
   const comiteProgramaDoAno = dadosComitePrograma[anoAtual] || []; // Filtra os membros do comitê de programa do ano atual
 
@@ -77,7 +77,7 @@ const Washes2018 = () => {
         {/* Membros Permanentes */}
         <h1 className="text-center text-[28px] lg:text-[32px] font-bold mb-8">Comitê Diretivo - Membros Permanentes</h1>
         <div className="flex flex-wrap justify-around gap-4 mb-10">
-          {dadosMembros.map((member, index) => (
+          {comiteDiretivo.map((member, index) => (
             <Card
               key={index}
               imgSrc={member.imgSrc}
