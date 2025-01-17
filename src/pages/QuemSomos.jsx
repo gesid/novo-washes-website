@@ -68,18 +68,6 @@ const QuemSomos = () => {
             informática médica, computação aplicada à educação e ações sociais,
             entre outros.
           </p>
-          <p className="text-lg font-light text-[#2F2F2F] lg:text-3xl">
-            Nesta edição do WASHES, em consonância com a temática do{" "}
-            <strong className="font-bold">
-              CSBC 2025 - Governança Digital para uma Sociedade Sustentável,
-            </strong>{" "}
-            reforçamos ainda mais a importância do assunto com a adição e
-            adequação de alguns{" "}
-            <a href="/washes-2025" className="font-bold hover:text-blue-700">
-              tópicos de interesse
-            </a>
-            .
-          </p>
         </div>
       </div>
 

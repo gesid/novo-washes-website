@@ -1,5 +1,11 @@
 export const dadosTimelineQuemSomos = [
   {
+    year: "2025",
+    title: "Décima edição",
+    description:
+      `Será realizado em Maceió/AL. O prazo para submissão é até 10 de março de 2025, submeta já o seu artigo!.`,
+  },
+  {
     year: "2024",
     title: "Nona edição",
     description:

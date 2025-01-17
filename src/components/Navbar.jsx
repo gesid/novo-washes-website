@@ -1,51 +1,45 @@
-import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link, useLocation } from 'react-router-dom';
-import '../style/app.css';
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
+import { dadosEdicaoAtual } from "../data/dadosEdicaoAtual";
+import "../style/app.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const [selected, setSelected] = useState(location.pathname);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
-
-  const handleItemClick = (path, external) => {
-    if (!external) {
-      setSelected(path);
-      setIsOpen(false); // Fechar o menu ao selecionar um item (apenas para dispositivos móveis)
-    }
   };
 
   const renderNavItem = (item, index, isMobile = false) => (
     <Link
       key={index}
       to={item.path}
-      onClick={() => handleItemClick(item.path, item.external)}
       target={item.external ? "_blank" : "_self"}
       rel={item.external ? "noopener noreferrer" : ""}
-      className={`text-gray-500 hover:text-white hover:bg-pink-500 px-3 py-2 rounded transition-colors duration-300 relative group ${selected === item.path ? 'font-bold' : ''
-        } ${isMobile ? 'text-2xl my-4' : ''}`}
+      className={`text-gray-500 hover:text-white hover:bg-pink-500 px-3 py-2 rounded transition-colors duration-300 relative group ${
+        location.pathname === item.path ? "font-bold" : ""
+      } ${isMobile ? "text-2xl my-4" : ""}`}
     >
       {item.name}
       <span
-        className={`absolute bottom-0 left-0 w-full h-1 ${selected === item.path ? 'bg-pink-500' : 'bg-transparent'
-          } group-hover:bg-pink-500 transition-all duration-300`}
+        className={`absolute bottom-0 left-0 w-full h-1 ${
+          location.pathname === item.path ? "bg-pink-500" : "bg-transparent"
+        } group-hover:bg-pink-500 transition-all duration-300`}
       ></span>
     </Link>
   );
 
   const navItems = [
-    { name: 'HOME', path: '/' },
-    { name: 'QUEM SOMOS', path: '/quem-somos' },
-    { name: 'WASHES 2025', path: '/washes-2025' },
-    { name: 'EDIÇÕES ANTERIORES', path: '/edicoes-anteriores' },
+    { name: "HOME", path: "/" },
+    { name: "QUEM SOMOS", path: "/quem-somos" },
+    { name: `WASHES ${dadosEdicaoAtual.anoAtualDoEvento}`, path: `/washes-${dadosEdicaoAtual.anoAtualDoEvento}` },
+    { name: "EDIÇÕES ANTERIORES", path: "/edicoes-anteriores" },
     {
-      name: 'DATAWASHES',
-      path: 'https://datawashes.pythonanywhere.com',
-      external: true
+      name: "DATAWASHES",
+      path: "https://datawashes.pythonanywhere.com",
+      external: true,
     },
   ];
 
@@ -53,8 +47,14 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/assets/imgs/logo_washes.svg" alt="Logo" className="h-8 mr-2" />
-          <span className="text-2xl font-medium">WASHES</span>
+          <Link to="/" className="flex items-center">
+            <img
+              src="/assets/imgs/logo_washes.svg"
+              alt="Logo"
+              className="h-8 mr-2 cursor-pointer"
+            />
+            <span className="text-2xl font-medium">WASHES</span>
+          </Link>
         </div>
         <div className="hidden lg:flex space-x-8">
           {navItems.map((item, index) => renderNavItem(item, index))}

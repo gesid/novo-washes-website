@@ -19,8 +19,8 @@ export function Programacao({data,horarioDeInicio, apresentador, sessao, program
 
   return(
     <section>
-      <div className=" w-full bg-[#2A5D82] border border-[#2A5D82] rounded-xl flex text-white" onClick={openDropDown}>
-        <div className="bg-[#003358] px-4 rounded-s-xl flex flex-col gap-2 items-center lg:text-[28px] md:text-2xl text-xl p-5 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+      <div className="cursor-pointer w-full bg-[#2A5D82] border border-[#2A5D82] rounded-xl flex text-white" onClick={openDropDown}>
+        <div className="bg-[#003358] px-4 rounded-s-xl justify-center flex flex-col gap-2 items-center lg:text-[28px] md:text-2xl text-xl p-5 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
           <span className="text-center lg:text-xl md:text-xl text-lg"> {data}</span>
           <span className="text-center"> {horarioDeInicio} </span>
         </div>
@@ -51,15 +51,20 @@ export function Programacao({data,horarioDeInicio, apresentador, sessao, program
               <th className="border-black border text-left pl-2 w-full">Apresentação</th>
             </tr>
           </thead>
-            {programacao.map((programacao, index)=> (
-              <tbody key={index} className="lg:text-xl md:text-lg text-base font-semibold">
+            {programacao.map((programacao, index) => (
+            <tbody key={index} className="lg:text-xl md:text-lg text-base font-semibold">
               <tr>
-                <td className="border-black border text-center">{programacao.horarioApresentacao}</td>
-                <td className="border-black border text-left p-2">{programacao.temaApresentacao}</td>
+                <td 
+                  className="border-black border text-center" 
+                  dangerouslySetInnerHTML={{ __html: programacao.horarioApresentacao }}
+                ></td>
+                <td 
+                  className="border-black border text-left p-2"
+                  dangerouslySetInnerHTML={{ __html: programacao.temaApresentacao }}
+                ></td>
               </tr>
-            
             </tbody>
-            ))}
+          ))}
           
         </table>
       </div>
